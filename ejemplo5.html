@@ -2,81 +2,86 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo Práctico 4: Etiquetas de texto</title>
+    <title>Ejemplo Práctico 5: Etiquetas de texto</title> 
     <meta name="keywords" content="HTML, etiquetas, texto">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-        <h1>Etiquetas para texto</h1>
+        <h1>Ejemplo Práctico 5</h1>
     </header>
 
     <main>
-        <div>
-            <h2>Encabezados</h2>
-            <p>Este tipo de etiquetas se suelen utilizar para títulos y subtítulos. Hay seis niveles, de <code>&lt;h1&gt;</code> (mayor) a <code>&lt;h6&gt;</code> (menor).</p>
+        <section id="contenido-original">
+            <h1>Etiquetas para texto</h1>
+
+            <div>
+                <h2>Encabezados</h2>
+                <p>Este tipo de etiquetas se suelen utilizar para títulos y subtítulos. Hay seis niveles, de <code>&lt;h1&gt;</code> (mayor) a <code>&lt;h6&gt;</code> (menor).</p>
+                
+                <p>
+                    <h1>Yo soy un h1</h1>
+                    <h2>Yo soy un h2</h2>
+                    <h3>Yo soy un h3</h3>
+                    <h4>Yo soy un h4</h4>
+                    <h5>Yo soy un h5</h5>
+                    <h6>Yo soy un h6</h6>
+                </p>
+            </div>
             
-            <p>
-                <h1>Yo soy un h1</h1>
-                <h2>Yo soy un h2</h2>
-                <h3>Yo soy un h3</h3>
-                <h4>Yo soy un h4</h4>
-                <h5>Yo soy un h5</h5>
-                <h6>Yo soy un h6</h6>
-            </p>
-        </div>
+            <hr>
+            
+            <div>
+                <h2>Usando Negritas, Cursivas y Subrayados</h2>
+                <p>
+                    En HTML es posible agregar <strong>negrita</strong>, <em>cursiva</em> y <ins>subrayado</ins>
+                    de forma muy sencilla. De hecho, se pueden combinar estas
+                    <strong>negrita + <em>cursiva</em></strong> y
+                    <ins>subrayado + <em>cursiva</em> + <strong>deseados</strong></ins>
+                    para conseguir los resultados.
+                </p>
+            </div>
+            
+            <hr>
+            
+            <div>
+                <h2>Citas</h2>
+                <p>
+                    HTML también permite insertar citas mediante el uso de la etiqueta <code>&lt;blockquote&gt;</code>. Esta da un resultado similar al párrafo, inserta espacio
+                    antes y después de un bloque de código, pero también inserta un margen a la
+                    izquierda y a la derecha. El resultado visual tiene la finalidad de manejar
+                    el texto como los libros lo hacen con una frase que ha dicho alguien más, es
+                    decir, manejar el texto como una fuente de información externa como se
+                    muestra en el siguiente ejemplo:
+                </p>
+                <blockquote>
+                    Los débiles no luchan. Los más fuertes quizás luchan una hora. Los que aún son más fuertes, luchan unos años. Pero los más fuertes de todos, luchan toda su vida, éstos son los indispensables.
+                    <cite>Bertolt Brecht</cite>
+                </blockquote>
+            </div>
+        </section>
         
-        <hr>
-        
-        <div>
-            <h2>Usando Negritas, Cursivas y Subrayados</h2>
-            <p>
-                En HTML es posible agregar <strong>negrita</strong>, <em>cursiva</em> y <ins>subrayado</ins>
-                de forma muy sencilla. De hecho, se pueden combinar estas
-                <strong>negrita + <em>cursiva</em></strong> y
-                <ins>subrayado + <em>cursiva</em> + <strong>deseados</strong></ins>
-                para conseguir los resultados.
-            </p>
-        </div>
-        
-        <hr>
-        
-        <div>
-            <h2>Citas</h2>
-            <p>
-                HTML también permite insertar citas mediante el uso de la etiqueta <code>&lt;blockquote&gt;</code>. Esta da un resultado similar al párrafo, inserta espacio
-                antes y después de un bloque de código, pero también inserta un margen a la
-                izquierda y a la derecha. El resultado visual tiene la finalidad de manejar
-                el texto como los libros lo hacen con una frase que ha dicho alguien más, es
-                decir, manejar el texto como una fuente de información externa como se
-                muestra en el siguiente ejemplo:
-            </p>
-            <blockquote>
-                Los débiles no luchan. Los más fuertes quizás luchan una hora. Los que aún son más fuertes, luchan unos años. Pero los más fuertes de todos, luchan toda su vida, éstos son los indispensables.
-                <cite>Bertolt Brecht</cite>
-            </blockquote>
-        </div>
         <section id="evidencia-visual">
-            <h2>Evidencia Visual del Ejemplo Práctico 4</h2>
+            <h2>Evidencia Visual del Ejemplo Práctico 5</h2>
             <p>Se adjuntan dos capturas de pantalla para la revisión del ejercicio.</p>
 
             <figure>
-                <img src="ejemplo4_codigo.jpg" 
-                     alt="Captura del código fuente HTML del Ejemplo 4" 
+                <img src="ejemplo5_codigo.jpg" 
+                     alt="Captura del código fuente HTML del Ejemplo 5" 
                      style="width: 100%; max-width: 800px; border: 1px solid #333;">
-                <figcaption>Figura 1: Código fuente del archivo ejemplo4.html.</figcaption>
+                <figcaption>Figura 1: Código fuente del archivo ejemplo5.html.</figcaption>
             </figure>
 
             <figure>
-                <img src="ejemplo4_resultado.jpg" 
-                     alt="Captura del resultado en el navegador del Ejemplo 4" 
+                <img src="ejemplo5_resultado.jpg" 
+                     alt="Captura del resultado en el navegador del Ejemplo 5" 
                      style="width: 100%; max-width: 800px; border: 1px solid #333;">
                 <figcaption>Figura 2: Resultado final de la página web en el navegador.</figcaption>
             </figure>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Ejemplo Práctico 4.</p>
+        <p>&copy; 2025 Ejemplo Práctico 5.</p>
     </footer>
 </body>
 </html>
