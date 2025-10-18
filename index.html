@@ -3,95 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Digital - Diego F. Jiménez</title>
+    <title>Mi Portafolio Progresivo de Desarrollo Web</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; padding: 20px; text-align: center; }
-        nav { background: #444; color: white; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .contenedor { width: 80%; max-width: 1000px; margin: auto; overflow: hidden; padding: 20px 0; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 30px; }
-        .entrada-blog, .apartado { background: white; border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; border-radius: 5px; }
-        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
-        .seccion-proyectos ul { list-style: none; padding: 0; }
-        .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-bottom: 30px;
+        }
+        h1 {
+            border-bottom: 2px solid #3CB371; /* Verde temático */
+            padding-bottom: 5px;
+        }
+        .proyecto {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #556B2F; /* Verde Oliva Oscuro */
+            margin-top: 0;
+        }
+        h3 {
+            color: #008B8B;
+            border-left: 3px solid #008B8B;
+            padding-left: 10px;
+        }
+        .evidencia-fotos div {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .evidencia-fotos p {
+            font-style: italic;
+            color: #666;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Portafolio Digital de Diego Fernando Jiménez de León</h1>
-        <p>Evidencia de Proyectos Web HTML5</p>
+        <h1>Mi Blog y Portafolio Progresivo</h1>
+        <p>Documentando el aprendizaje de HTML y Desarrollo Web.</p>
     </header>
 
-    <nav>
-        <a href="#introduccion">Introducción</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#reflexion">Reflexión Final</a>
-    </nav>
+    <main>
+        
+        <section class="proyecto">
+            <h2>Guía 2: Enlaces, Listas y Tablas</h2>
+            
+            <h3>Proyecto Integrador: Mundo Bicicleta.html</h3>
+            <p><strong>Resumen Teórico:</strong> En esta guía, aplicamos la estructura semántica de HTML5, la navegación interna (`id` y `href`), la gestión de contenido multimedia (`<img>`), enlaces externos (`target="_blank"`) y locales (`download`), y la organización de datos mediante listas y tablas.</p>
 
-    <div class="contenedor">
+            <h3>Código Fuente</h3>
+            <p>El código completo del proyecto se puede consultar en el <a href="[ENLACE A TU REPOSITORIO DE GITHUB/NETLIFY]" target="_blank">Repositorio del Proyecto Mundo Bicicleta</a>.</p>
 
-        <section id="introduccion" class="apartado">
-            <h2>Introducción Personal</h2>
-            <p>¡Hola! Soy <strong>Diego Fernando Jiménez de León</strong>. Esta página funciona como mi portafolio digital para la asignatura de Desarrollo Web. Aquí presento mi progreso y los proyectos de maquetación que desarrollé utilizando la estructura semántica de HTML5, organizados en las tres categorías solicitadas.</p>
+            <h3 class="evidencia-fotos">Evidencia Fotográfica</h3>
+            <div style="display: flex; gap: 20px; justify-content: space-around;">
+                <div style="flex-basis: 45%;">
+                    <p><strong>Captura del Código HTML:</strong></p>
+                    <img src="[Ruta de la Imagen del Código]" alt="Captura del código HTML del proyecto" style="width: 100%; height: auto; border: 1px solid #333;">
+                </div>
+                <div style="flex-basis: 45%;">
+                    <p><strong>Captura del Resultado en el Navegador:</strong></p>
+                    <img src="[Ruta de la Imagen del Resultado]" alt="Captura de la página Mundo Bicicleta.html en el navegador" style="width: 100%; height: auto; border: 1px solid #333;">
+                </div>
+            </div>
+            
+            <h3>Reflexión Breve</h3>
+            <p>Aprendí la importancia de la organización de archivos (imágenes locales) y cómo el uso de CSS básico puede transformar una página estructurada en un diseño visualmente atractivo y coherente con el tema. La navegación interna es clave para documentos extensos.</p>
+            
         </section>
 
-        <section id="proyectos">
-            <h2>EVIDENCIA DE TRABAJOS</h2>
+        </main>
 
-            <article id="investigacion" class="entrada-blog seccion-proyectos">
-                <h3>1. INVESTIGACIÓN (Mi Perfil Académico)</h3>
-                <p>Este proyecto representa la investigación sobre mi propio perfil y trayectoria académica. **Archivo esperado: perfil.html**</p>
-                <ul>
-                    <li>
-                        <strong>Mi Perfil Académico:</strong> 
-                        <a href="perfil.html" target="_blank">Ver Proyecto de Perfil</a> 
-                        (Demostración de listas y enlaces)
-                    </li>
-                </ul>
-            </article>
-
-            <article id="paginas-sugeridas" class="entrada-blog seccion-proyectos">
-                <h3>2. PÁGINAS WEB SUGERIDAS (Proyectos Finales)</h3>
-                <p>Estos proyectos aplican el uso de tablas, imágenes, y la estructura semántica de documentos web. **Archivos esperados: the_office.html y centroamerica.html**</p>
-                <ul>
-                    <li>
-                        <strong>Programa de TV Favorito (The Office):</strong> 
-                        <a href="the_office.html" target="_blank">Ver Proyecto de TV</a> 
-                        (Uso de imágenes y formato de texto)
-                    </li>
-                    <li>
-                        <strong>Países de Centroamérica:</strong> 
-                        <a href="centroamerica.html" target="_blank">Ver Proyecto Centroamérica</a> 
-                        (Uso de tablas y estructura semántica)
-                    </li>
-                </ul>
-            </article>
-
-            <article id="ejemplos-practicos" class="entrada-blog seccion-proyectos">
-                <h3>3. EJEMPLOS PRÁCTICOS (Archivos de Referencia y Práctica)</h3>
-                <p>Estos archivos demuestran la aplicación progresiva de etiquetas básicas de HTML5. **Archivos esperados: ejemplo2.html, ejemplo3.html, etc.**</p>
-                <ul>
-                    <li><a href="ejemplo2.html" target="_blank">Ejemplo Práctico 2</a> (Estructura Semántica Básica)</li>
-                    <li><a href="ejemplo3.html" target="_blank">Ejemplo Práctico 3</a> (Etiquetas de Texto, Imagen y Lista)</li>
-                    <li><a href="ejemplo4.html" target="_blank">Ejemplo Práctico 4</a> (Negritas, Citas y Encabezados)</li>
-                    <li><a href="ejemplo5.html" target="_blank">Ejemplo Práctico 5</a> (Vínculos e Imágenes)</li>
-                    <li><a href="ejemplo6.html" target="_blank">Ejemplo Práctico 6</a> (Uso de Tablas o Formularios)</li>
-                    <li><a href="ejemplo7.html" target="_blank">Ejemplo Práctico 7</a> (Práctica de Estructura Final)</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="reflexion" class="apartado">
-            <h2>Reflexión Final sobre lo Aprendido</h2>
-            <p>La realización de estos ejercicios fue esencial para entender que la clave del desarrollo web es la **estructura** y el **significado semántico** del código, no solo la apariencia visual. El mayor aprendizaje fue la importancia de organizar el contenido con etiquetas como `<header>`, `<article>` y `<footer>` para crear sitios accesibles y bien formados. **Esto concluye la actividad.**</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Portafolio Digital. Evidencia para la asignatura de Desarrollo Web.</p>
-    </footer>
 </body>
 </html>
