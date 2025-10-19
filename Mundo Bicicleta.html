@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Bicicleta - La Pasión sobre Ruedas</title>
+    <style>
+        /* AJUSTES PARA SIMULAR EL DISEÑO DEL MODELO */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px 40px;
+            background-color: #F8F8F8;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        header h1 {
+            color: #3CB371; /* Color temático para el título */
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #556B2F; /* Verde más oscuro */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        section h2 {
+            color: #008B8B;
+            text-align: center; /* Títulos de sección centrados */
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+        /* Estilo para la imagen histórica que permite que el texto fluya (como en el modelo) */
+        #historia img {
+            float: right;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Estilo para las imágenes de modelos */
+        #modelos img {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        footer {
+            background-color: #eee;
+            color: #666;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8em;
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        /* Limpiar el float después de la imagen de historia */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 title="Header - Título de la página">Historia, modelos, lugares para montar y recursos útiles.</h1>
+        <p style="font-size: 0.8em; color: #666;">La mejor guía online para entusiastas de la bicicleta.</p>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a> |
+        <a href="#modelos">Modelos para montar</a> |
+        <a href="#lugares">Lugares para montar</a> |
+        <a href="#recursos">Recursos</a>
+    </nav>
+
+    <main>
+        
+        <section id="historia" class="clearfix">
+            <h2>Historia de la Bicicleta</h2>
+            
+            <img src="imagenes/bici_historica.jpg" 
+                 alt="Bicicleta histórica" width="200" height="150" title="Bicicleta histórica (Imagen de ejemplo)">
+            
+            <p>La bicicleta es un vehículo de propulsión humana que evolucionó desde los primeros diseños del siglo XIX. Inventos clave incluyen la **draisiana** y luego las bicicletas con pedales y cadena. Con el tiempo se diversificó en modelos para paseo, montaña, carretera y urbanos.</p>
+            
+            <p>Para más información histórica consulta:
+                <a href="https://es.wikipedia.org/wiki/Bicicleta" target="_blank" rel="noopener noreferrer">Wikipedia: Bicicleta</a> y
+                <a href="https://www.britannica.com/technology/bicycle" target="_blank" rel="noopener noreferrer">Britannica: Bicycle</a>.
+            </p>
+        </section>
+
+        <section id="modelos">
+            <h2>Modelos de Bicicletas</h2>
+            <ul>
+                <li>**Montaña (MTB):** Diseñadas para terrenos irregulares, con suspensión y llantas anchas.</li>
+                <li>**Carretera:** Ligeras y rápidas, con ruedas delgadas y postura aerodinámica.</li>
+                <li>**Urbanas (Paseo):** Ideales para el transporte diario en la ciudad.</li>
+                <li>**Híbridas:** Combinan características de carretera y montaña para uso mixto.</li>
+            </ul>
+
+            <p style="font-style: italic;">Ejemplos visuales:</p>
+            <div style="text-align: center;">
+                <img src="imagenes/bici_mtb.jpg" 
+                     alt="Bicicleta de montaña en un sendero" width="200" height="150">
+                <img src="imagenes/bici_urbana.jpg" 
+                     alt="Bicicleta de paseo o urbana" width="200" height="150">
+                <img src="imagenes/biciexibicion.jpeg" 
+                     alt="Bicicleta en exhibición" width="200" height="150" style="margin-right:0;">
+                
+            </div>
+        </section>
+
+        <section id="lugares">
+            <h2>Lugares recomendados para montar</h2>
+            
+            <ol>
+                <li>Rutas urbanas y ciclovías en tu ciudad.</li>
+                <li>Parques nacionales y senderos de montaña para ciclismo de montaña.</li>
+                <li>Pistas y circuitos para entrenamiento y seguridad.</li>
+            </ol>
+            
+            <p><strong>Descargas Útiles:</strong></p>
+            <p>
+                <a href="https://www.gea21.com/wp-content/uploads/2024/08/Manual-ciclo-infraestructura-Republica-Dominicana-web.pdf" 
+                   download="Guía_Rutas_Bicicleta_RD">Guía local de rutas en bicicleta</a>
+            </p>
+            <p>
+                <a href="https://www.safekids.org/sites/default/files/documents/bike_safety_tips-spanish-2019.pdf" 
+                   download="Folleto_Bicicletas">Descargar folleto de seguridad</a>
+            </p>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos y enlaces útiles</h2>
+
+            <p><strong>Comunidades y Tiendas:</strong> 
+                <a href="https://bicicentro.com.do/" target="_blank" rel="noopener noreferrer">Tienda local</a> |
+                <a href="https://cocinortemtb.com.do/" target="_blank" rel="noopener noreferrer">Club de ciclismo</a>
+            </p>
+            
+            <p><strong>Ejemplo de elementos HTML y atributos:</strong></p>
+            <table border="1" style="width: 80%;">
+                <tr>
+                    <th>Elemento</th>
+                    <th>Atributos usados</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Enlace externo</td>
+                    <td>`href`, `target`, `rel`, `title`</td>
+                    <td><a href="https://portalancon.com/enace-garage-tiendas-de-bicicletas/" target="_blank" rel="noopener" title="Tiendas de bicicletas ENACE Garage">ver...</a></td>
+                </tr>
+                <tr>
+                    <td>Imagen</td>
+                    <td>`src`, `alt`, `width`, `height`, `title`</td>
+                    <td><a href="imagenes/biciexibicion.jpeg" target="_blank" title="Imagen de exhibición">Ver...</a></td>
+                </tr>
+                <tr>
+                    <td>Descarga</td>
+                    <td>`href`, `download`, `title`</td>
+                    <td><a href="https://app.mapfre.com/ccm/content/documentos/fundacion/seg-vial/libros/guia-ciclista-castellano.pdf" download="Guia-Ciclista.pdf">Descargar Guía Ciclista</a></td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2025 Información sobre bicicletas - Página de ejemplo. Contacto: 
+            <a href="mailto:info@mundobicicleta.com" style="color: #FFD700;">info@mundobicicleta.com</a> 
+        </p>
+    </footer>
+
+</body>
+</html>
