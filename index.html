@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Progresivo - Guías 1 y 2</title>
+    <title>Mi Portafolio Progresivo - Desarrollo Web</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -22,7 +22,7 @@
             border-radius: 8px;
         }
         h1 {
-            border-bottom: 2px solid #3CB371;
+            border-bottom: 2px solid #3CB371; /* Verde temático */
             padding-bottom: 5px;
             margin-bottom: 5px;
         }
@@ -41,43 +41,18 @@
             margin-top: 0;
             margin-bottom: 20px;
         }
-        /* Estilo para los apartados internos de cada proyecto (Ejemplos/Fotos) */
+        /* Estilo para los apartados internos de cada proyecto */
         h3 {
             color: #008B8B;
             border-left: 4px solid #008B8B;
             padding-left: 10px;
             margin-top: 25px;
         }
-        h4 {
-            color: #CC5500; /* Naranja para evidencias */
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-            /* Separador visual para las fotos */
-            border-top: 1px dashed #ccc; 
-            padding-top: 10px;
-        }
-        /* Estilos para el contenedor de las fotos */
-        .foto-contenedor {
-            display: flex;
-            gap: 20px;
-            justify-content: space-around;
-            padding-bottom: 15px;
-        }
-        .foto-item {
-            flex-basis: 48%;
-            text-align: center;
-        }
-        .foto-item img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #333;
-            border-radius: 4px;
-        }
-        .foto-item p {
-            font-style: italic;
-            color: #666;
-            font-size: 0.9em;
+        /* Este apartado de .apartado-fotos se mantiene vacío, listo para ser llenado */
+        .apartado-fotos {
+            margin-top: 20px;
+            padding: 15px 0;
+            border-top: 1px dashed #ccc;
         }
     </style>
 </head>
@@ -98,18 +73,28 @@
             <p><strong>Enlace al Repositorio:</strong> [Añade el enlace aquí]</p>
 
             <h3>Ejemplo 2: Títulos y Formato</h3>
-            <p><strong>Contenido:</strong> [Descripción del segundo ejemplo que tenías originalmente.]</p>
+            <p><strong>Contenido:</strong> Demostración de texto en negritas, itálicas y subrayado. Uso de la etiqueta `&lt;br&gt;` para saltos de línea.</p>
             <p><strong>Enlace al Repositorio:</strong> [Añade el enlace aquí]</p>
             
+            <h3>Ejemplo 3: Listas Desordenadas y Ordenadas</h3>
+            <p><strong>Contenido:</strong> Uso de `&lt;ul&gt;` y `&lt;ol&gt;` para organizar la información en viñetas y numeración.</p>
+
+            <h3>Ejemplo 4: Enlaces Externos</h3>
+            <p><strong>Contenido:</strong> Aplicación del atributo `target="_blank"` para abrir enlaces en una nueva pestaña.</p>
+
+            <h3>Ejemplo 5: Imágenes</h3>
+            <p><strong>Contenido:</strong> Inserción de imágenes con el atributo `src` y texto alternativo con `alt`.</p>
+            
+            <h3>Ejemplo 6: Tablas Simples</h3>
+            <p><strong>Contenido:</strong> Creación de tablas básicas (`&lt;table&gt;`, `&lt;tr&gt;`, `&lt;td&gt;`) para organizar datos en filas y columnas.</p>
+
             <h3>Ejemplo 7: Conclusión de la Guía 1</h3>
-            <p><strong>Contenido:</strong> [Descripción del último ejemplo/conclusión.]</p>
+            <p><strong>Contenido:</strong> Resumen de los principales aprendizajes y la conclusión del primer proyecto.</p>
         </section>
 
         <section id="proyecto2" class="seccion-proyecto" style="border: 2px solid #3CB371;">
             <h2>PROYECTO 2: Enlaces, Tablas y Multimedia (Guía 2)</h2>
             
-            <p><strong>Resumen General:</strong> Esta sección documenta los 4 proyectos principales de la Guía 2. Cada ejemplo está separado del apartado de su fotografía.</p>
-
             <h3>Ejemplo 1: Enlaces de Anclaje</h3>
             <p><strong>Descripción:</strong> Demostración de navegación interna utilizando el atributo `id` y `href="#nombre"`. Permite crear índices y saltos rápidos dentro de un mismo documento.</p>
             <p><strong>Enlace al Código Fuente:</strong> [Añade el enlace al código del Ejemplo 1]</p>
@@ -122,65 +107,29 @@
             <p><strong>Descripción:</strong> Uso del atributo `style` directamente en las etiquetas para aplicar propiedades CSS de color y fondo, demostrando estilos en línea (`inline styling`).</p>
             <p><strong>Enlace al Código Fuente:</strong> [Añade el enlace al código del Ejemplo 3]</p>
 
-            <div class="apartado-fotos">
-                <h4>Fotos del Ejemplo 1 (Anclaje)</h4>
-                <div class="foto-contenedor">
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Código E1]" alt="Captura del código del Ejemplo 1">
-                        <p>Código: **`E1_CODE.png`**</p>
-                    </div>
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Resultado E1]" alt="Captura del resultado del Ejemplo 1">
-                        <p>Resultado: **`E1_RESULTADO.png`**</p>
-                    </div>
+            <hr> <div class="apartado-fotos">
+                <h3>Fotos Ejemplo 1</h3>
+                <p>Aquí se incluirán las fotos del código y resultado del Ejemplo 1.</p>
                 </div>
-            </div>
 
             <div class="apartado-fotos">
-                <h4>Fotos del Ejemplo 2 (Centroamérica)</h4>
-                <div class="foto-contenedor">
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Código E2]" alt="Captura del código del Ejemplo 2">
-                        <p>Código: **`E2_CODE.png`**</p>
-                    </div>
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Resultado E2]" alt="Captura del resultado del Ejemplo 2">
-                        <p>Resultado: **`E2_RESULTADO.png`**</p>
-                    </div>
+                <h3>Fotos Ejemplo 2</h3>
+                <p>Aquí se incluirán las fotos del código y resultado del Ejemplo 2.</p>
                 </div>
-            </div>
 
             <div class="apartado-fotos">
-                <h4>Fotos del Ejemplo 3 (Colores y Estilos)</h4>
-                <div class="foto-contenedor">
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Código E3]" alt="Captura del código del Ejemplo 3">
-                        <p>Código: **`E3_CODE.png`**</p>
-                    </div>
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Resultado E3]" alt="Captura del resultado del Ejemplo 3">
-                        <p>Resultado: **`E3_RESULTADO.png`**</p>
-                    </div>
+                <h3>Fotos Ejemplo 3</h3>
+                <p>Aquí se incluirán las fotos del código y resultado del Ejemplo 3.</p>
                 </div>
-            </div>
 
-            <h3>Proyecto Mundo Bicicleta (Proyecto Integrador)</h3>
-            <p><strong>Reflexión:</strong> El proyecto integró la mayoría de los saberes de la Guía 2 (enlaces internos/externos/descarga, imágenes locales, listas y tablas) con un diseño ajustado al modelo visual solicitado.</p>
+            <hr> <h3>Proyecto Mundo Bicicleta (Integrador)</h3>
+            <p><strong>Reflexión:</strong> Proyecto integrador de la Guía 2 que combinó navegación interna, imágenes locales, enlaces de descarga, listas y tablas con un diseño ajustado al modelo visual solicitado.</p>
             <p><strong>Enlace al Código Fuente:</strong> <a href="[ENLACE A TU REPOSITORIO DE MUNDO BICICLETA]" target="_blank">Ver Código en Repositorio</a></p>
 
             <div class="apartado-fotos">
-                <h4>Fotos del Proyecto Mundo Bicicleta</h4>
-                <div class="foto-contenedor">
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Código PB]" alt="Captura del código HTML del proyecto Mundo Bicicleta">
-                        <p>Código del Proyecto: **`PB_CODE.png`**</p>
-                    </div>
-                    <div class="foto-item">
-                        <img src="[Ruta de la Imagen del Resultado PB]" alt="Captura de la página Mundo Bicicleta.html en el navegador">
-                        <p>Resultado del Proyecto: **`PB_RESULTADO.png`**</p>
-                    </div>
+                <h3>Fotos Proyecto Mundo Bicicleta</h3>
+                <p>Aquí se incluirán las fotos del código y resultado del Proyecto Mundo Bicicleta.</p>
                 </div>
-            </div>
             
         </section>
 
