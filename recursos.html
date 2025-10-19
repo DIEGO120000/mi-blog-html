@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Multimedia y Controles - Parte 2</title>
+</head>
+<body>
+
+    <header>
+        <h1>Recursos Multimedia y Controles HTML5</h1>
+        <p>Integración de contenido de la Guía 3 (Multimedia, Iframes, Progress y Meter).</p>
+    </header>
+
+    <hr>
+
+    <main>
+        
+        <h2>Recursos Multimedia Nativos</h2>
+
+        <section>
+            <h3>Video Local</h3>
+            <video width="640" height="360" controls poster="imagenes/miniatura_video.jpg">
+                <source src="videos/mi_video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video HTML5.
+            </video>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h3>Audio Local</h3>
+            <audio controls>
+                <source src="audios/mi_audio.m4a" type="audio/mp4">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <hr>
+
+        <h2>Contenido Incrustado (Iframes)</h2>
+
+        <section>
+            <h3>Video de YouTube Incrustado</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/EjemploDeVideoDeYouTube" 
+                title="Video de YouTube" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <hr>
+        
+        <section>
+            <h3>Mapa de Ubicación (Google Maps)</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!4m7!3m6!1s..." 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Presentación de Google Slides</h3>
+            <iframe 
+                src="https://docs.google.com/presentation/d/e/EjemploDePresentacion" 
+                frameborder="0" 
+                width="640" 
+                height="389" 
+                allowfullscreen="true">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <h2>Medidores y Progreso (Valores Simulados)</h2>
+        
+        <section>
+            <h3>Barra de Progreso</h3>
+            <label for="progreso-descarga">Progreso de la Tarea (Simulado al 75%):</label>
+            <progress id="progreso-descarga" max="100" value="75">75%</progress>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h3>Medidor de Valor</h3>
+            <label for="uso-cpu">Uso del Recurso (Simulado al 90%):</label>
+            <meter id="uso-cpu" min="0" max="100" value="90" low="30" high="80" optimum="10">90%</meter>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Documento de Prueba de Recursos Multimedia. Cumplimiento con las etiquetas semánticas: **&lt;header&gt;**, **&lt;main&gt;**, **&lt;footer&gt;**.</p>
+    </footer>
+
+</body>
+</html>
