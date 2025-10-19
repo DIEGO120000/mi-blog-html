@@ -3,102 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Progresivo - Base Original</title>
+    <title>Portafolio Digital - Diego F. Jiménez</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 1000px;
-            padding: 20px;
-            background-color: #f4f4f9;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: white;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-        h1 {
-            border-bottom: 2px solid #3CB371;
-            padding-bottom: 5px;
-            margin-bottom: 5px;
-        }
-        /* Estilo general de las grandes secciones de Proyecto */
-        .seccion-proyecto {
-            background: white;
-            padding: 25px;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        h2 {
-            color: #556B2F;
-            border-bottom: 3px double #e0e0e0;
-            padding-bottom: 10px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        /* Estilo para los apartados internos de cada proyecto */
-        h3 {
-            color: #008B8B;
-            border-left: 4px solid #008B8B;
-            padding-left: 10px;
-            margin-top: 25px;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        nav { background: #444; color: white; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .contenedor { width: 80%; max-width: 1000px; margin: auto; overflow: hidden; padding: 20px 0; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+        .entrada-blog, .apartado { background: white; border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; border-radius: 5px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
+        .seccion-proyectos ul { list-style: none; padding: 0; }
+        .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
+        
+        /* ESTILOS AÑADIDOS PARA EL PROYECTO 2 Y LAS FOTOS */
+        .proyecto2-seccion { border: 2px solid #28a745; margin-top: 30px; padding: 20px; }
+        .apartado-fotos { margin-top: 20px; padding: 15px 0; border-top: 1px dashed #ccc; }
+        .apartado-fotos h4 { color: #dc3545; margin-top: 0; margin-bottom: 15px; border-left: 5px solid #dc3545; padding-left: 10px; }
+        .foto-contenedor { display: flex; gap: 20px; justify-content: space-around; padding-bottom: 15px; }
+        .foto-item { flex-basis: 48%; text-align: center; }
+        .foto-item img { width: 100%; height: auto; border: 1px solid #333; border-radius: 4px; }
+        .foto-item p { font-style: italic; color: #666; font-size: 0.9em; }
+        /* Fin de estilos añadidos */
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mi Blog y Portafolio Progresivo</h1>
-        <p>Documentación de Proyectos de Desarrollo Web</p>
+        <h1>Portafolio Digital de Diego Fernando Jiménez de León</h1>
+        <p>Evidencia de Proyectos Web HTML5</p>
     </header>
 
-    <main>
-        
-        <section id="proyecto1" class="seccion-proyecto">
-            <h2>PROYECTO 1: Estructura Básica (Guía 1)</h2>
-            
-            <h3>Ejemplo 1: Estructura HTML</h3>
-            <p><strong>Contenido:</strong> Enfoque en las etiquetas principales (`<html>`, `<head>`, `<body>`) y el uso de títulos y párrafos (`<h1>` a `<h6>`, `<p>`).</p>
-            <p><strong>Enlace al Repositorio:</strong> [Añade el enlace aquí]</p>
+    <nav>
+        <a href="#introduccion">Introducción</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proyecto2">Proyecto 2</a> <a href="#reflexion">Reflexión Final</a>
+    </nav>
 
-            <h3>Ejemplo 2: Títulos y Formato</h3>
-            <p><strong>Contenido:</strong> Demostración de texto en negritas, itálicas y subrayado. Uso de la etiqueta `&lt;br&gt;` para saltos de línea.</p>
-            <p><strong>Enlace al Repositorio:</strong> [Añade el enlace aquí]</p>
-            
-            <h3>Ejemplo 3: Listas Desordenadas y Ordenadas</h3>
-            <p><strong>Contenido:</strong> Uso de `&lt;ul&gt;` y `&lt;ol&gt;` para organizar la información en viñetas y numeración.</p>
+    <div class="contenedor">
 
-            <h3>Ejemplo 4: Enlaces Externos</h3>
-            <p><strong>Contenido:</strong> Aplicación del atributo `target="_blank"` para abrir enlaces en una nueva pestaña.</p>
-
-            <h3>Ejemplo 5: Imágenes</h3>
-            <p><strong>Contenido:</strong> Inserción de imágenes con el atributo `src` y texto alternativo con `alt`.</p>
-            
-            <h3>Ejemplo 6: Tablas Simples</h3>
-            <p><strong>Contenido:</strong> Creación de tablas básicas (`&lt;table&gt;`, `&lt;tr&gt;`, `&lt;td&gt;`) para organizar datos en filas y columnas.</p>
-
-            <h3>Ejemplo 7: Conclusión de la Guía 1</h3>
-            <p><strong>Contenido:</strong> Resumen de los principales aprendizajes y la conclusión del primer proyecto.</p>
+        <section id="introduccion" class="apartado">
+            <h2>Introducción Personal</h2>
+            <p>¡Hola! Soy <strong>Diego Fernando Jiménez de León</strong>. Esta página funciona como mi portafolio digital para la asignatura de Desarrollo Web. Aquí presento mi progreso y los proyectos de maquetación que desarrollé utilizando la estructura semántica de HTML5, organizados en las tres categorías solicitadas.</p>
         </section>
 
-        <section id="proyecto2" class="seccion-proyecto" style="border: 2px solid #3CB371;">
-            <h2>PROYECTO 2: Enlaces, Tablas y Multimedia (Guía 2)</h2>
-            
-            <p><strong>Resumen General:</strong> Esta sección contiene los 4 proyectos principales de la Guía 2, separados por la evidencia fotográfica, tal como se solicitó.</p>
+        <section id="proyectos">
+            <h2>EVIDENCIA DE TRABAJOS (PROYECTO 1)</h2>
 
+            <article id="investigacion" class="entrada-blog seccion-proyectos">
+                <h3>1. INVESTIGACIÓN (Mi Perfil Académico)</h3>
+                <p>Este proyecto representa la investigación sobre mi propio perfil y trayectoria académica. **Archivo esperado: perfil.html**</p>
+                <ul>
+                    <li>
+                        <strong>Mi Perfil Académico:</strong> 
+                        <a href="perfil.html" target="_blank">Ver Proyecto de Perfil</a> 
+                        (Demostración de listas y enlaces)
+                    </li>
+                </ul>
+            </article>
+
+            <article id="paginas-sugeridas" class="entrada-blog seccion-proyectos">
+                <h3>2. PÁGINAS WEB SUGERIDAS (Proyectos Finales)</h3>
+                <p>Estos proyectos aplican el uso de tablas, imágenes, y la estructura semántica de documentos web. **Archivos esperados: the_office.html y centroamerica.html**</p>
+                <ul>
+                    <li>
+                        <strong>Programa de TV Favorito (The Office):</strong> 
+                        <a href="the_office.html" target="_blank">Ver Proyecto de TV</a> 
+                        (Uso de imágenes y formato de texto)
+                    </li>
+                    <li>
+                        <strong>Países de Centroamérica:</strong> 
+                        <a href="centroamerica.html" target="_blank">Ver Proyecto Centroamérica</a> 
+                        (Uso de tablas y estructura semántica)
+                    </li>
+                </ul>
+            </article>
+
+            <article id="ejemplos-practicos" class="entrada-blog seccion-proyectos">
+                <h3>3. EJEMPLOS PRÁCTICOS (Archivos de Referencia y Práctica)</h3>
+                <p>Estos archivos demuestran la aplicación progresiva de etiquetas básicas de HTML5. **Archivos esperados: ejemplo2.html, ejemplo3.html, etc.**</p>
+                <ul>
+                    <li><a href="ejemplo2.html" target="_blank">Ejemplo Práctico 2</a> (Estructura Semántica Básica)</li>
+                    <li><a href="ejemplo3.html" target="_blank">Ejemplo Práctico 3</a> (Etiquetas de Texto, Imagen y Lista)</li>
+                    <li><a href="ejemplo4.html" target="_blank">Ejemplo Práctico 4</a> (Negritas, Citas y Encabezados)</li>
+                    <li><a href="ejemplo5.html" target="_blank">Ejemplo Práctico 5</a> (Vínculos e Imágenes)</li>
+                    <li><a href="ejemplo6.html" target="_blank">Ejemplo Práctico 6</a> (Uso de Tablas o Formularios)</li>
+                    <li><a href="ejemplo7.html" target="_blank">Ejemplo Práctico 7</a> (Práctica de Estructura Final)</li>
+                </ul>
+            </article>
             </section>
 
-    </main>
+        <section id="proyecto2" class="apartado proyecto2-seccion">
+            <h2>PROYECTO 2: Guía de Enlaces y Multimedia (Guía 2)</h2>
+            
+            <h3>Ejemplo 1: Enlaces de Anclaje</h3>
+            <p><strong>Descripción:</strong> Demostración de navegación interna utilizando el atributo `id` y `href="#nombre"`. Permite crear índices y saltos rápidos dentro de un mismo documento.</p>
+            <p><strong>Enlace al Código Fuente:</strong> [Añade el enlace al código del Ejemplo 1]</p>
+
+            <h3>Ejemplo 2: Proyecto Centroamérica (Pág. 7)</h3>
+            <p><strong>Descripción:</strong> Aplicación de enlaces internos y externos para crear un mini-portal informativo, ejemplificando la vinculación entre varios documentos HTML y recursos web.</p>
+            <p><strong>Enlace al Código Fuente:</strong> [Añade el enlace al código del Ejemplo 2]</p>
+
+            <h3>Ejemplo 3: Colores y Estilos (Pág. 13)</h3>
+            <p><strong>Descripción:</strong> Uso del atributo `style` directamente en las etiquetas para aplicar propiedades CSS de color y fondo, demostrando estilos en línea (`inline styling`).</p>
+            <p><strong>Enlace al Código Fuente:</strong> [Añade el enlace al código del Ejemplo 3]</p>
+
+            <hr>
+
+            <div class="apartado-fotos">
+                <h4>Fotos Ejemplo 1 (Evidencia Fotográfica)</h4>
+                <div class="foto-contenedor">
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Código E1]" alt="Captura del código del Ejemplo 1">
+                        <p>Código: **`E1_CODE.png`**</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Resultado E1]" alt="Captura del resultado del Ejemplo 1">
+                        <p>Resultado: **`E1_RESULTADO.png`**</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartado-fotos">
+                <h4>Fotos Ejemplo 2 (Evidencia Fotográfica)</h4>
+                <div class="foto-contenedor">
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Código E2]" alt="Captura del código del Ejemplo 2">
+                        <p>Código: **`E2_CODE.png`**</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Resultado E2]" alt="Captura del resultado del Ejemplo 2">
+                        <p>Resultado: **`E2_RESULTADO.png`**</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartado-fotos">
+                <h4>Fotos Ejemplo 3 (Evidencia Fotográfica)</h4>
+                <div class="foto-contenedor">
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Código E3]" alt="Captura del código del Ejemplo 3">
+                        <p>Código: **`E3_CODE.png`**</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Resultado E3]" alt="Captura del resultado del Ejemplo 3">
+                        <p>Resultado: **`E3_RESULTADO.png`**</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Proyecto Mundo Bicicleta (Integrador)</h3>
+            <p><strong>Reflexión:</strong> El proyecto integró la mayoría de los saberes de la Guía 2 (enlaces internos/externos/descarga, imágenes locales, listas y tablas) con un diseño ajustado al modelo visual solicitado.</p>
+            <p><strong>Enlace al Código Fuente:</strong> <a href="[ENLACE A TU REPOSITORIO DE MUNDO BICICLETA]" target="_blank">Ver Código en Repositorio</a></p>
+
+            <div class="apartado-fotos">
+                <h4>Fotos Proyecto Mundo Bicicleta (Evidencia Fotográfica)</h4>
+                <div class="foto-contenedor">
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Código PB]" alt="Captura del código HTML del proyecto Mundo Bicicleta">
+                        <p>Código del Proyecto: **`PB_CODE.png`**</p>
+                    </div>
+                    <div class="foto-item">
+                        <img src="[Ruta de la Imagen del Resultado PB]" alt="Captura de la página Mundo Bicicleta.html en el navegador">
+                        <p>Resultado del Proyecto: **`PB_RESULTADO.png`**</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="reflexion" class="apartado">
+            <h2>Reflexión Final sobre lo Aprendido</h2>
+            <p>La realización de estos ejercicios fue esencial para entender que la clave del desarrollo web es la **estructura** y el **significado semántico** del código, no solo la apariencia visual. El mayor aprendizaje fue la importancia de organizar el contenido con etiquetas como `<header>`, `<article>` y `<footer>` para crear sitios accesibles y bien formados. **Esto concluye la actividad.**</p>
+        </section>
+
+    </div>
 
     <footer>
-        <p style="text-align: center; font-size: 0.8em; color: #999; margin-top: 20px;">Documentación Progresiva del Estudiante.</p>
+        <p>&copy; 2025 Portafolio Digital. Evidencia para la asignatura de Desarrollo Web.</p>
     </footer>
-
 </body>
 </html>
-                
