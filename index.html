@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Progresivo - Guía 2</title>
+    <title>Mi Portafolio Progresivo - Desarrollo Web</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0 auto;
+            max-width: 1000px; /* Ancho cómodo para el portafolio */
+            padding: 20px;
             background-color: #f4f4f9;
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #1a1a1a; /* Negro oscuro */
             color: white;
             margin-bottom: 30px;
+            border-radius: 8px;
         }
         h1 {
-            border-bottom: 2px solid #3CB371;
+            border-bottom: 2px solid #3CB371; /* Verde temático */
             padding-bottom: 5px;
+            margin-bottom: 5px;
         }
-        .proyecto {
+        .guia-seccion {
             background: white;
-            padding: 20px;
-            margin-bottom: 30px;
+            padding: 25px;
+            margin-bottom: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         h2 {
-            color: #556B2F; /* Título principal de la guía */
+            color: #556B2F; /* Verde Oliva Oscuro */
+            border-bottom: 2px dashed #e0e0e0;
+            padding-bottom: 10px;
             margin-top: 0;
         }
         h3 {
-            color: #008B8B; /* Título del ejemplo/proyecto */
-            border-left: 3px solid #008B8B;
+            color: #008B8B; /* Título del proyecto */
+            border-left: 4px solid #008B8B;
             padding-left: 10px;
+            margin-top: 25px;
         }
+        h4 {
+            color: #CC5500; /* Naranja para evidencias */
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .proyecto-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #f0f0f0;
+            border-radius: 6px;
+        }
+        /* Estilos para el nuevo apartado de fotos */
         .evidencia-fotos {
             margin-top: 20px;
             padding-top: 10px;
             border-top: 1px dashed #ccc;
-        }
-        .evidencia-fotos h4 {
-            color: #CC5500;
         }
         .foto-contenedor {
             display: flex;
@@ -53,7 +69,7 @@
             margin-top: 10px;
         }
         .foto-item {
-            flex-basis: 45%;
+            flex-basis: 48%; /* Dos columnas casi iguales */
             text-align: center;
         }
         .foto-item img {
@@ -73,101 +89,113 @@
 
     <header>
         <h1>Mi Blog y Portafolio Progresivo</h1>
-        <p>Documentando el aprendizaje de HTML y Desarrollo Web - Guía No. 2</p>
+        <p>Documentación de Proyectos de Desarrollo Web</p>
     </header>
 
     <main>
         
-        <section class="proyecto">
-            <h2>Guía 2: Enlaces, Listas, Tablas y Estilos</h2>
-            <p><strong>Resumen Teórico:</strong> Esta guía se centró en la creación de enlaces (internos, externos, descarga), la aplicación de estilos básicos (`style` y colores), y la organización de contenido mediante listas y la estructura de tablas (`<table>`).</p>
+        <section class="guia-seccion">
+            <h2>Guía 1: Introducción a HTML</h2>
+            <div class="proyecto-item">
+                <h3>Proyecto 1: Mi Primera Página Web</h3>
+                <p><strong>Resumen:</strong> Introducción a las etiquetas básicas (`<html>`, `<head>`, `<body>`, `<h1>` a `<h6>`, `<p>`). Establecimiento de la estructura mínima de un documento HTML.</p>
+                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace a tu repositorio de la Guía 1]</p>
+                </div>
+        </section>
 
-            <section>
-                <h3>Ejemplo 1: Enlaces de Anclaje (selecciona_interna.html)</h3>
-                <p><strong>Descripción:</strong> Demuestra el uso de la navegación interna utilizando `href="#id"` en los enlaces y el atributo `id` en los títulos de sección.</p>
-                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al archivo `selecciona_interna.html` en tu repositorio]</p>
+        <hr>
+
+        <section class="guia-seccion">
+            <h2>Guía 2: Enlaces, Listas, Tablas y Estilos</h2>
+            
+            <p><strong>Resumen General:</strong> Aplicación práctica de navegación interna/externa, contenido multimedia (`<img>`), listas, tablas y estilos básicos (`style`).</p>
+
+            <div class="proyecto-item">
+                <h3>Ejemplo 1: Enlaces de Anclaje (Pág. 6)</h3>
+                <p><strong>Descripción:</strong> Demostración de navegación dentro de una misma página (`#id` y `href`).</p>
+                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al código del Ejemplo 1]</p>
 
                 <div class="evidencia-fotos">
-                    <h4>Evidencia Fotográfica</h4>
+                    <h4>Evidencia Fotográfica (Ejemplo 1)</h4>
                     <div class="foto-contenedor">
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Código E1]" alt="Captura del código del Ejemplo 1">
-                            <p>Código del Ejemplo 1: `E1_CODE.png`</p>
+                            <p>Código: `E1_CODE.png`</p>
                         </div>
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Resultado E1]" alt="Captura del resultado del Ejemplo 1">
-                            <p>Resultado del Ejemplo 1: `E1_RESULTADO.png`</p>
+                            <p>Resultado: `E1_RESULTADO.png`</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             
-            <section>
-                <h3>Ejemplo 2: Proyecto Centroamérica (enlaces_internos.html)</h3>
-                <p><strong>Descripción:</strong> Aplicación práctica de enlaces internos para navegar entre países, combinando `article` para secciones y enlaces externos (`target="_blank"`) en el contenido.</p>
-                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al archivo `enlaces_internos.html` en tu repositorio]</p>
+            <div class="proyecto-item">
+                <h3>Ejemplo 2: Proyecto Centroamérica (Pág. 7)</h3>
+                <p><strong>Descripción:</strong> Uso de estructura semántica (`<article>`) y enlaces internos para crear un índice funcional (Ejemplo que me pediste "ponerle tu toque").</p>
+                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al código del Ejemplo 2]</p>
                 
                 <div class="evidencia-fotos">
-                    <h4>Evidencia Fotográfica</h4>
+                    <h4>Evidencia Fotográfica (Ejemplo 2)</h4>
                     <div class="foto-contenedor">
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Código E2]" alt="Captura del código del Ejemplo 2">
-                            <p>Código del Ejemplo 2: `E2_CODE.png`</p>
+                            <p>Código: `E2_CODE.png`</p>
                         </div>
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Resultado E2]" alt="Captura del resultado del Ejemplo 2">
-                            <p>Resultado del Ejemplo 2: `E2_RESULTADO.png`</p>
+                            <p>Resultado: `E2_RESULTADO.png`</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section>
-                <h3>Ejemplo 3: Colores en HTML (familia.html)</h3>
-                <p><strong>Descripción:</strong> Demostración del uso de colores y estilos básicos utilizando el atributo `style` para cambiar colores de texto y fondo en diferentes elementos HTML.</p>
-                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al archivo `familia.html` en tu repositorio]</p>
+            <div class="proyecto-item">
+                <h3>Ejemplo 3: Colores y Estilos (Pág. 13)</h3>
+                <p><strong>Descripción:</strong> Aplicación directa del atributo `style` para cambiar colores de fondo y texto utilizando nombres de colores y códigos hexadecimales.</p>
+                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al código del Ejemplo 3]</p>
 
                 <div class="evidencia-fotos">
-                    <h4>Evidencia Fotográfica</h4>
+                    <h4>Evidencia Fotográfica (Ejemplo 3)</h4>
                     <div class="foto-contenedor">
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Código E3]" alt="Captura del código del Ejemplo 3">
-                            <p>Código del Ejemplo 3: `E3_CODE.png`</p>
+                            <p>Código: `E3_CODE.png`</p>
                         </div>
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Resultado E3]" alt="Captura del resultado del Ejemplo 3">
-                            <p>Resultado del Ejemplo 3: `E3_RESULTADO.png`</p>
+                            <p>Resultado: `E3_RESULTADO.png`</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            <hr> <section>
-                <h3>Proyecto Integrador: Mundo Bicicleta.html</h3>
-                <p><strong>Reflexión y Contenido:</strong> Este proyecto integra la mayoría de los saberes de la guía (enlaces internos/externos/descarga, imágenes, listas y tablas) en una página cohesiva con estilos propios. El diseño se ajustó al modelo esperado.</p>
-                <p><strong>Enlace al Código Fuente:</strong> [Añade aquí el enlace al archivo `MundoBicicleta.html` en tu repositorio]</p>
+            </div>
+
+            <div class="proyecto-item" style="background-color: #f7fff7; border: 2px solid #3CB371;">
+                <h3>Proyecto Integrador Final: Mundo Bicicleta.html</h3>
+                <p><strong>Reflexión:</strong> El proyecto integró enlaces internos y externos, imágenes locales, listas y tablas. Se aplicó CSS en línea para simular la estructura visual del modelo de diseño solicitado.</p>
+                <p><strong>Enlace al Código Fuente:</strong> <a href="[ENLACE A TU REPOSITORIO DE MUNDO BICICLETA]" target="_blank">Ver Código en Repositorio</a></p>
 
                 <div class="evidencia-fotos">
-                    <h4>Evidencia Fotográfica</h4>
+                    <h4>Evidencia Fotográfica (Proyecto Bicicleta)</h4>
                     <div class="foto-contenedor">
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Código PB]" alt="Captura del código HTML del proyecto Mundo Bicicleta">
-                            <p>Código del Proyecto Bicicleta: **`PB_CODE.png`**</p>
+                            <p>Código del Proyecto: **`PB_CODE.png`**</p>
                         </div>
                         <div class="foto-item">
                             <img src="[Ruta de la Imagen del Resultado PB]" alt="Captura de la página Mundo Bicicleta.html en el navegador">
-                            <p>Resultado del Proyecto Bicicleta: **`PB_RESULTADO.png`**</p>
+                            <p>Resultado del Proyecto: **`PB_RESULTADO.png`**</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
         </section>
 
-    </main>
+        </main>
 
     <footer>
-        <p style="text-align: center; font-size: 0.8em; color: #999;">Portafolio creado como evidencia de la Guía No. 2.</p>
+        <p style="text-align: center; font-size: 0.8em; color: #999; margin-top: 20px;">Portafolio creado para la asignatura de Desarrollo Web.</p>
     </footer>
 
 </body>
