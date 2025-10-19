@@ -15,10 +15,17 @@
         h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
         .seccion-proyectos ul { list-style: none; padding: 0; }
         .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
-
-        /* Estilos específicos para el Proyecto 2 y los enlaces de fotos */
         .seccion-proyectos[id="proyecto2"] { border-left: 5px solid #28a745; }
         .seccion-proyectos[id="proyecto2"] h4 { color: #dc3545; }
+        
+        /* Estilo específico para los enlaces de fotos */
+        .enlaces-fotos a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: #dc3545;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -101,13 +108,25 @@
 
                 <hr>
 
-                <h4>Evidencia Fotográfica (Código y Resultado)</h4>
-                <ul>
-                    <li><a href="fotos.ejemplo.1.html" target="_blank">Fotos Ejemplo 1</a></li>
-                    <li><a href="fotos.ejemplo.2.html" target="_blank">Fotos Ejemplo 2</a></li>
-                    <li><a href="fotos.ejemplo.3.html" target="_blank">Fotos Ejemplo 3</a></li>
-                    <li><a href="fotos.mundo_bicicleta.html" target="_blank">Fotos Mundo Bicicleta</a></li>
-                </ul>
+                <h4>Evidencia Fotográfica (JPG)</h4>
+                <div class="enlaces-fotos">
+                    <p>
+                        **Ejemplo 1:** <a href="fotos.ejemplo.codigo.1.jpg" target="_blank">Ver Código</a> | 
+                        <a href="fotos.ejemplo.resultado.1.jpg" target="_blank">Ver Resultado</a>
+                    </p>
+                    <p>
+                        **Ejemplo 2:** <a href="fotos.ejemplo.codigo.2.jpg" target="_blank">Ver Código</a> | 
+                        <a href="fotos.ejemplo.resultado.2.jpg" target="_blank">Ver Resultado</a>
+                    </p>
+                    <p>
+                        **Ejemplo 3:** <a href="fotos.ejemplo.codigo.3.jpg" target="_blank">Ver Código</a> | 
+                        <a href="fotos.ejemplo.resultado.3.jpg" target="_blank">Ver Resultado</a>
+                    </p>
+                    <p>
+                        **Mundo Bicicleta:** <a href="fotos.mundo_bicicleta.codigo.jpg" target="_blank">Ver Código</a> | 
+                        <a href="fotos.mundo_bicicleta.resultado.jpg" target="_blank">Ver Resultado</a>
+                    </p>
+                </div>
             </article>
             </section>
 
