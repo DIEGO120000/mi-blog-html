@@ -15,6 +15,43 @@
         h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
         .seccion-proyectos ul { list-style: none; padding: 0; }
         .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
+
+        /* ESTILOS AÑADIDOS PARA LAS FOTOS DEL PROYECTO 2 */
+        .apartado-fotos { 
+            margin-top: 20px; 
+            padding: 15px 0; 
+            border-top: 1px dashed #ccc; 
+        }
+        .apartado-fotos h4 { 
+            color: #dc3545; /* Rojo para destacar las fotos */
+            margin-top: 0; 
+            margin-bottom: 15px; 
+            border-left: 5px solid #dc3545; 
+            padding-left: 10px; 
+        }
+        .foto-contenedor { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: space-around; 
+            padding-bottom: 15px; 
+        }
+        .foto-item { 
+            flex-basis: 48%; 
+            text-align: center; 
+        }
+        .foto-item img { 
+            width: 100%; 
+            height: auto; 
+            border: 1px solid #333; 
+            border-radius: 4px; 
+        }
+        .foto-item p { 
+            font-style: italic; 
+            color: #666; 
+            font-size: 0.9em; 
+        }
+        /* Fin de estilos añadidos */
+
     </style>
 </head>
 <body>
@@ -27,6 +64,7 @@
     <nav>
         <a href="#introduccion">Introducción</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#proyecto2">Proyecto 2</a>
         <a href="#reflexion">Reflexión Final</a>
     </nav>
 
@@ -82,27 +120,29 @@
                 </ul>
             </article>
 
-            <!-- NUEVO APARTADO: PROYECTO 2 -->
-            <article id="proyecto2" class="entrada-blog seccion-proyectos">
-                <h3>PROYECTO 2 – MUNDO BICICLETA</h3>
-                <p>Este segundo proyecto presenta ejercicios más completos que aplican la estructura semántica y la integración de contenido multimedia. <strong>Archivos esperados:</strong> ejemplo1.html a ejemplo3.html y mundo_bicicleta.html</p>
+            <article id="proyecto2" class="entrada-blog seccion-proyectos" style="border-left: 5px solid #28a745;">
+                <h3>PROYECTO 2 – MUNDO BICICLETA (Guía 2)</h3>
+                <p>Este segundo proyecto presenta ejercicios más completos que aplican la estructura semántica y la integración de contenido multimedia, enfocados en la Guía 2.</p>
+                
+                <h4>Archivos de Proyecto (Ejemplos 1, 2, 3)</h4>
                 <ul>
-                    <li><a href="ejemplo1.html" target="_blank">Ejemplo Práctico 1</a> (Introducción a HTML5)</li>
-                    <li><a href="ejemplo2.html" target="_blank">Ejemplo Práctico 2</a> (Estructura de Página)</li>
-                    <li><a href="ejemplo3.html" target="_blank">Ejemplo Práctico 3</a> (Listas, Enlaces e Imágenes)</li>
-                    <li><a href="mundo_bicicleta.html" target="_blank">Proyecto Mundo Bicicleta</a> (Sitio Web Temático Completo)</li>
+                    <li><a href="ejemplo.1.html" target="_blank">Ejemplo Práctico 1: Enlaces de Anclaje</a></li>
+                    <li><a href="ejemplo.2.html" target="_blank">Ejemplo Práctico 2: Proyecto Centroamérica</a></li>
+                    <li><a href="ejemplo.3.html" target="_blank">Ejemplo Práctico 3: Colores y Estilos</a></li>
+                    <li><a href="mundo_bicicleta.html" target="_blank">Proyecto Mundo Bicicleta (Sitio Web Temático)</a></li>
                 </ul>
 
-                <!-- NUEVOS ENLACES A FOTOS -->
+                <hr>
+
+                <h4>Evidencia Fotográfica (Código y Resultado)</h4>
                 <ul>
-                    <li><a href="fotos_ejemplo1.html" target="_blank">Fotos Ejemplo 1</a></li>
-                    <li><a href="fotos_ejemplo2.html" target="_blank">Fotos Ejemplo 2</a></li>
-                    <li><a href="fotos_ejemplo3.html" target="_blank">Fotos Ejemplo 3</a></li>
-                    <li><a href="fotos_mundo_bicicleta.html" target="_blank">Fotos Mundo Bicicleta</a></li>
+                    <li><a href="fotos.ejemplo.1.html" target="_blank">Fotos Ejemplo 1</a></li>
+                    <li><a href="fotos.ejemplo.2.html" target="_blank">Fotos Ejemplo 2</a></li>
+                    <li><a href="fotos.ejemplo.3.html" target="_blank">Fotos Ejemplo 3</a></li>
+                    <li><a href="fotos.mundo_bicicleta.html" target="_blank">Fotos Mundo Bicicleta</a></li>
                 </ul>
             </article>
-
-        </section>
+            </section>
 
         <section id="reflexion" class="apartado">
             <h2>Reflexión Final sobre lo Aprendido</h2>
