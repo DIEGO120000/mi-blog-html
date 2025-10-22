@@ -1,0 +1,19 @@
+/* Estilos para el Encabezado (h1) */
+h1 {
+    color: #2980b9; /* Azul fuerte */
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    border-bottom: 2px solid #2980b9; /* Línea inferior azul */
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+/* Estilos para el Párrafo (p) */
+p {
+    color: #444; /* Gris oscuro */
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-left: 10px;
+    margin-right: 10px;
+}
