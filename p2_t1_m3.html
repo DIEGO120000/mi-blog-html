@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Sitio - Diseño Estructurado</title>
+  <!-- Aquí está el cambio del nombre del archivo CSS -->
+  <link rel="stylesheet" href="p2_t1_m3.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Mi Sitio CSS3</h1>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li class="has-sub">
+            <a href="#">Servicios ▾</a>
+            <ul class="sub">
+              <li><a href="#">Diseño</a></li>
+              <li><a href="#">Desarrollo</a></li>
+              <li><a href="#">SEO</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Proyectos ▾</a>
+            <ul class="sub">
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="col sidebar">
+      <h2>Columna 1</h2>
+      <p>Contenido de apoyo, enlaces y tarjetas pequeñas.</p>
+    </section>
+
+    <section class="col contenido">
+      <h2>Columna 2 — Contenido principal</h2>
+      <p>Aquí va el contenido principal: texto, imágenes y artículos.</p>
+
+      <article class="card">
+        <h3>Formulario de contacto</h3>
+        <form id="contacto" class="form" novalidate>
+          <label>Nombre
+            <input type="text" name="nombre" required placeholder="Tu nombre">
+          </label>
+          <label>Correo
+            <input type="email" name="email" required placeholder="tu@ejemplo.com">
+          </label>
+          <label>Asunto
+            <input type="text" name="asunto" placeholder="(opcional)">
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="6" required placeholder="Escribe tu mensaje"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset" class="btn ghost">Limpiar</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <aside class="col extras">
+      <h2>Columna 3</h2>
+      <p>Noticias, eventos o widgets.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Contacto: <a href="mailto:info@misitio.com">info@misitio.com</a> · Tel: +1 555 1234</p>
+      <p>© <span class="year"></span> Mi Sitio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

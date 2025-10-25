@@ -1,0 +1,133 @@
+:root {
+  --primary: hsl(210 90% 52%);
+  --accent: #ff6b6b;
+  --muted: rgba(0,0,0,0.6);
+  --bg: #f7f8fa;
+  --card: white;
+  --gap: 1.25rem;
+}
+
+* { box-sizing: border-box; transition: all .15s ease; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: #222;
+}
+
+/* Encabezado */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.site-title { color: var(--primary); }
+
+/* Menú principal */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: .5rem .8rem;
+  border-radius: 8px;
+}
+.menu a:hover { background: var(--primary); color: #fff; }
+.has-sub { position: relative; }
+.sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  transition: all .3s ease;
+}
+.has-sub:hover .sub {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.sub a {
+  display: block;
+  padding: .5rem 1rem;
+  color: #333;
+}
+.sub a:hover { background: #eee; }
+
+/* Grid de 3 columnas */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: var(--gap);
+  padding: 1rem;
+}
+.col {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Formulario */
+.form input, .form textarea {
+  width: 100%;
+  padding: .5rem;
+  margin-top: .25rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+.form input:focus, .form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(34,111,255,0.3);
+}
+.form label:has(input:required)::before,
+.form label:has(textarea:required)::before {
+  content: '*';
+  color: var(--accent);
+  margin-right: .25rem;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover { background: hsl(210 90% 45%); }
+.btn.ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 2px solid #ccc;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr; }
+  .sub { position: static; box-shadow: none; }
+}
