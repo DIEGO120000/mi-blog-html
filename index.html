@@ -5,20 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Digital - Diego F. Jiménez</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; padding: 20px; text-align: center; }
-        nav { background: #444; color: white; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .contenedor { width: 80%; max-width: 1000px; margin: auto; overflow: hidden; padding: 20px 0; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 30px; }
-        .entrada-blog, .apartado { background: white; border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; border-radius: 5px; }
-        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
-        .seccion-proyectos ul { list-style: none; padding: 0; }
-        .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
-        .seccion-proyectos[id="proyecto2"] { border-left: 5px solid #28a745; }
-        .seccion-proyectos[id="proyecto2"] h4 { color: #dc3545; }
-
-        /* Estilo específico para los enlaces de fotos */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #007bff;
+        }
+        .contenedor {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        .apartado, .entrada-blog {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #007bff;
+        }
         .enlaces-fotos p {
             margin: 5px 0;
             padding-left: 10px;
@@ -26,10 +71,13 @@
         }
         .enlaces-fotos a {
             display: inline-block;
-            margin-right: 15px;
+            margin-right: 10px;
             text-decoration: none;
             color: #007bff;
             font-weight: bold;
+        }
+        .enlaces-fotos a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -37,12 +85,12 @@
 
     <header>
         <h1>Portafolio Digital de Diego Fernando Jiménez de León</h1>
-        <p>Evidencia de Proyectos Web HTML5</p>
+        <p>Evidencia de Proyectos Web HTML5 y CSS3</p>
     </header>
 
     <nav>
         <a href="#introduccion">Introducción</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#proyecto1">Proyecto 1</a>
         <a href="#proyecto2">Proyecto 2</a>
         <a href="#proyecto3">Proyecto 3</a>
         <a href="#proyecto1modulo3">Proyecto 1 Módulo 3</a>
@@ -52,14 +100,57 @@
 
     <div class="contenedor">
 
-        <!-- CONTENIDO ORIGINAL MANTENIDO SIN CAMBIOS -->
-        <!-- (tu código original aquí, no modificado) -->
+        <!-- SECCIÓN INTRODUCCIÓN -->
+        <section id="introduccion" class="apartado">
+            <h2>Introducción</h2>
+            <p>Este portafolio recopila las evidencias de los diferentes proyectos desarrollados durante el curso de Desarrollo Web, demostrando la aplicación de HTML5 y CSS3 para construir páginas estructuradas, con estilos personalizados, diseño adaptable y uso de animaciones modernas.</p>
+        </section>
 
-        <!-- NUEVO APARTADO -->
-        <article id="proyecto2modulo3" class="entrada-blog seccion-proyectos">
-            <h3>PROYECTO 2 – MÓDULO 3</h3>
-            <p>Este proyecto corresponde al segundo trabajo del Módulo 3, donde se aplican propiedades avanzadas de CSS3 como animaciones, transiciones, modelo de caja, posicionamiento y diseño responsivo.</p>
+        <!-- PROYECTO 1 -->
+        <article id="proyecto1" class="entrada-blog">
+            <h3>Proyecto 1 - Página Básica HTML5</h3>
+            <p>En este proyecto se creó la primera estructura básica de una página web usando etiquetas semánticas, listas, vínculos e imágenes.</p>
+            <ul>
+                <li><a href="proyecto1.html" target="_blank">Ver Proyecto 1</a></li>
+                <li><a href="proyecto1_resultado.jpg" target="_blank">Ver Resultado</a></li>
+            </ul>
+        </article>
 
+        <!-- PROYECTO 2 -->
+        <article id="proyecto2" class="entrada-blog">
+            <h3>Proyecto 2 - Estilos CSS Básicos</h3>
+            <p>Este proyecto aplicó los fundamentos de CSS para mejorar la presentación visual de una página web, utilizando selectores, colores, márgenes, bordes y tipografía.</p>
+            <ul>
+                <li><a href="proyecto2.html" target="_blank">Ver Proyecto 2</a></li>
+                <li><a href="proyecto2_resultado.jpg" target="_blank">Ver Resultado</a></li>
+            </ul>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article id="proyecto3" class="entrada-blog">
+            <h3>Proyecto 3 - Página con Multimedia</h3>
+            <p>Se incorporaron elementos multimedia (audio y video) y un diseño más estructurado utilizando contenedores y enlaces internos.</p>
+            <ul>
+                <li><a href="proyecto3.html" target="_blank">Ver Proyecto 3</a></li>
+                <li><a href="proyecto3_resultado.jpg" target="_blank">Ver Resultado</a></li>
+            </ul>
+        </article>
+
+        <!-- PROYECTO 1 MÓDULO 3 -->
+        <article id="proyecto1modulo3" class="entrada-blog">
+            <h3>Proyecto 1 – Módulo 3</h3>
+            <p>Proyecto orientado al uso de maquetación y estructura avanzada con HTML5, aplicando principios de organización visual, jerarquía de contenido y semántica correcta.</p>
+            <ul>
+                <li><a href="p1_t1_m3.html" target="_blank">Ver Proyecto HTML</a></li>
+                <li><a href="p1_t1_m3.css" target="_blank">Ver Hoja de Estilo</a></li>
+            </ul>
+        </article>
+
+        <!-- PROYECTO 2 MÓDULO 3 -->
+        <article id="proyecto2modulo3" class="entrada-blog">
+            <h3>Proyecto 2 – Módulo 3</h3>
+            <p>Aplicación práctica de propiedades de CSS3: diseño en cuadrícula, modelo de caja, transiciones, animaciones y posicionamiento avanzado, con un menú interactivo y formulario estilizado.</p>
+            
             <ul>
                 <li><strong>Archivo HTML:</strong> 
                     <a href="p2_t1_m3.html" target="_blank">Ver Proyecto HTML</a>
@@ -72,15 +163,15 @@
             <h4>Evidencias del Proyecto</h4>
             <div class="enlaces-fotos">
                 <p>
-                    **Código HTML:** 
+                    <strong>Código HTML:</strong> 
                     <a href="code_p2_t1_m3.jpg" target="_blank">Ver Imagen</a>
                 </p>
                 <p>
-                    **Código CSS:** 
+                    <strong>Código CSS:</strong> 
                     <a href="css_p2_t1_m3.jpg" target="_blank">Ver Imagen</a>
                 </p>
                 <p>
-                    **Resultados del Proyecto:** 
+                    <strong>Resultados del Proyecto:</strong> 
                     <a href="resultado.1_p2_t1_m3.jpg" target="_blank">Ver Resultado 1</a> | 
                     <a href="resultado.2_p2_t1_m3.jpg" target="_blank">Ver Resultado 2</a> | 
                     <a href="resultado.3_p2_t1_m3.jpg" target="_blank">Ver Resultado 3</a>
@@ -88,17 +179,16 @@
             </div>
         </article>
 
-        <!-- FIN DEL NUEVO APARTADO -->
-
+        <!-- REFLEXIÓN FINAL -->
         <section id="reflexion" class="apartado">
             <h2>Reflexión Final sobre lo Aprendido</h2>
-            <p>La realización de estos ejercicios fue esencial para entender que la clave del desarrollo web es la <strong>estructura</strong> y el <strong>significado semántico</strong> del código, no solo la apariencia visual. El mayor aprendizaje fue la importancia de organizar el contenido con etiquetas como <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code> y <code>&lt;footer&gt;</code> para crear sitios accesibles y bien formados. <strong>Esto concluye la actividad.</strong></p>
+            <p>El desarrollo de estos proyectos permitió comprender la importancia de la estructura semántica del HTML y el poder del CSS3 para dar vida a las interfaces web. Además, reafirmó la relevancia del diseño responsivo y la organización del código para lograr páginas limpias, funcionales y visualmente agradables.</p>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 Portafolio Digital. Evidencia para la asignatura de Desarrollo Web.</p>
+        <p>&copy; 2025 Portafolio Digital - Diego Fernando Jiménez de León | Evidencia de Desarrollo Web</p>
     </footer>
 </body>
 </html>
