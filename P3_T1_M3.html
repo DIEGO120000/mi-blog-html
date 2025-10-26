@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón 2D CSS3</title>
+    <style>
+        /* Estilos base del botón */
+        .btn-2d {
+            background: #375F85; /* Color de fondo */
+            color: #fff; /* Color del texto */
+            padding: 10px 20px; /* Relleno interno */
+            border-radius: 5px; /* Bordes redondeados */
+            /* La clave: Transición para suavizar el cambio */
+            transition: transform 0.5s ease;
+            /* Estilo adicional para que parezca un botón */
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Estilos al pasar el cursor (Hover) */
+        .btn-2d:hover {
+            /* Combinación de transformaciones: Gira 15 grados y aumenta el tamaño 20% */
+            transform: rotate(15deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>Botón con Transformación 2D</h2>
+    <button class="btn-2d">Hover me!</button>
+</body>
+</html>

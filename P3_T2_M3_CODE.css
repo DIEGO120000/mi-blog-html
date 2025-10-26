@@ -1,0 +1,126 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    /* Usamos Flexbox para centrar todo el contenido verticalmente */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacio entre secciones */
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+h2 {
+    color: #375F85;
+    margin-bottom: 0;
+}
+
+/* ------------------ Botones 2D ------------------ */
+.btn-2d {
+    background-color: #375F85;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    /* La transición suaviza el cambio de color y la transformación */
+    transition: transform 0.4s, background 0.3s ease; 
+    margin: 0 10px;
+}
+
+.btn-2d:hover {
+    /* Transformación 2D: Gira 15 grados y aumenta el tamaño 20% */
+    transform: rotate(15deg) scale(1.2); 
+    background-color: #50911E; /* Nuevo color de fondo al hacer hover */
+}
+
+/* ------------------ Tarjetas 3D ------------------ */
+
+/* Contenedor que usa Flexbox para organizar las tarjetas horizontalmente */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas salten de línea en pantallas pequeñas */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* El elemento 'card' define la perspectiva para el efecto 3D */
+.card {
+    width: 150px;
+    height: 200px;
+    /* Define la profundidad y perspectiva de la escena 3D */
+    perspective: 600px; 
+}
+
+/* card-inner es el elemento que va a rotar 180 grados */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* Mantiene las caras 3D en su posición correcta */
+    transform-style: preserve-3d; 
+    /* Transición para la animación de rotación */
+    transition: transform 0.8s; 
+}
+
+/* Rotación de la tarjeta al hacer hover */
+.card:hover .card-inner {
+    /* Transformación 3D: Rotación 180 grados en el eje Y (giro) */
+    transform: rotateY(180deg); 
+}
+
+/* Estilos comunes para las caras (Frente y Atrás) */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #375F85;
+    
+    /* Configuración de texto y centrado con Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+
+    /* Oculta la cara trasera hasta que se voltee */
+    backface-visibility: hidden;
+}
+
+/* Estilo específico del Frente */
+.card-front {
+    background-color: #68b12f; /* Verde */
+}
+
+/* Estilo específico del Atrás */
+.card-back {
+    background-color: #abc; /* Azul claro/gris */
+    /* Gira la cara trasera 180 grados para que quede de espaldas al inicio */
+    transform: rotateY(180deg);
+}
+
+/* ------------------ Media Queries para Responsividad ------------------ */
+
+/* Regla para pantallas pequeñas (ej. móviles) de 500px o menos */
+@media (max-width: 500px) {
+    /* Cambia el cuerpo principal de vertical a una disposición centralizada 
+       (aunque ya estaba como columna, es buena práctica mantener la query) */
+    body {
+        align-items: stretch;
+    }
+    
+    /* En pantallas pequeñas, centra el contenedor de tarjetas para un mejor look */
+    .cards-container {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas en el ancho */
+    }
+
+    /* Ajustar el tamaño del botón para que no sea tan dominante */
+    .btn-2d {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

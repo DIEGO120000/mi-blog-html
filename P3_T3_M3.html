@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones en CSS3</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Estilos base del botón */
+        .btn-transicion {
+            background-color: #375F85; /* Azul oscuro */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            /* PROPIEDAD CLAVE: Define que TODOS los cambios tomen 0.5s y usen un efecto 'ease-in-out' */
+            transition: all 0.5s ease-in-out; 
+        }
+
+        /* Estilos que se aplican al pasar el cursor (Hover) */
+        .btn-transicion:hover {
+            background-color: #50911E; /* Verde (cambio de color) */
+            transform: scale(1.2); /* Aumento de tamaño 20% (cambio de tamaño) */
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de Transición CSS3</h2>
+    <p>Al pasar el cursor sobre el botón, el color y el tamaño cambian de manera suave.</p>
+    <button class="btn-transicion">Pasa el cursor</button>
+</body>
+</html>
