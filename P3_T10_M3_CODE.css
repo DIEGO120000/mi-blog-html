@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Fondo oscuro */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #ffc107; /* Amarillo/naranja */
+    font-family: cursive; /* O una fuente decorativa similar */
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* ------------------ Carrusel Principal ------------------ */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+/* ------------------ Miniaturas ------------------ */
+.thumbnails {
+    display: flex; /* Organiza las miniaturas horizontalmente */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #444;
+    border-radius: 3px;
+    opacity: 0.7; /* Ligeramente atenuadas */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Destaca al hacer hover */
+}
+
+/* ------------------ Controles de Navegación (Prev/Next) ------------------ */
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    /* Ajuste para que las flechas queden fuera del carrusel si el padre fuera el body/header */
+}
+
+.navigation label {
+    font-size: 3em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0 10px;
+}
+
+.navigation label:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+/* ------------------ Botones de Reproducción ------------------ */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.nav-buttons button {
+    background: #f3c13a; /* Amarillo/naranja */
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background: #fff;
+    color: #000;
+}

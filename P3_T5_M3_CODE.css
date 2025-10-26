@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+/* ------------------ Flexbox para la Galería ------------------ */
+.contenedor-tarjetas {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen en pantallas pequeñas */
+    gap: 30px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    margin-top: 30px;
+}
+
+/* ------------------ Estructura y 3D ------------------ */
+.tarjeta {
+    perspective: 1000px; /* Profundidad 3D para el efecto de rotación */
+    width: 230px;
+    height: 250px;
+}
+
+.tarjeta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Hace que los hijos se conserven en el espacio 3D */
+    transform-style: preserve-3d; 
+    /* Suaviza la animación de rotación */
+    transition: transform 0.8s; 
+    cursor: pointer;
+}
+
+/* Estilos comunes para las caras */
+.tarjeta-frente, .tarjeta-atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    
+    /* Configuración de Flexbox para centrar contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    backface-visibility: hidden; /* Oculta la cara cuando está rotada */
+    font-size: 1.2em;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra sutil */
+}
+
+/* Estilos específicos de las caras */
+.tarjeta-frente {
+    /* Degradado de ejemplo */
+    background: linear-gradient(to bottom right, #375F85, #68b12f); 
+}
+
+.tarjeta-atras {
+    background: linear-gradient(to bottom right, #50911E, #a1d57f);
+    /* Gira la cara trasera 180 grados para que quede de espaldas al inicio */
+    transform: rotateY(180deg); 
+}
+
+/* ------------------ Interactividad (Hover + Animación) ------------------ */
+
+/* Rotación de la tarjeta al hacer hover */
+.tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg) scale(1.05); /* Rota 180° y agranda un 5% */
+    
+    /* Animación opcional de rebote al rotar */
+    animation: bounce 0.6s ease;
+}
+
+/* Animación opcional de rebote al pasar el cursor */
+@keyframes bounce {
+    0% {
+        transform: rotateY(180deg) scale(1);
+    }
+    50% {
+        transform: rotateY(180deg) scale(1.1); /* Hace un pequeño "rebote" */
+    }
+    100% {
+        transform: rotateY(180deg) scale(1.05);
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Slider CSS3</title>
+    <link rel="stylesheet" href="P3_T10_M3_CODE.css">
+</head>
+<body>
+
+    <header>
+        <h1>Laboratorios y Centros Especializados</h1>
+        <p>Plataformas con diversas tecnologías que complementan tu formación profesional.</p>
+    </header>
+
+    <div class="carousel">
+        <img src="img/img001.png" alt="Laboratorio de Biomédica Experimental" id="mainImage">
+        
+        <div class="caption">Laboratorio de Biomédica Experimental</div>
+    </div>
+    
+    <div class="navigation">
+        <label for="slide_prev" class="prev">&#x25c0;</label>
+        <label for="slide_next" class="next">&#x25b6;</label>
+    </div>
+
+    <div class="thumbnails">
+        <img src="img/img001.png" alt="Miniatura 1" onclick="document.getElementById('mainImage').src='img/img001.png'">
+        <img src="img/img002.png" alt="Miniatura 2" onclick="document.getElementById('mainImage').src='img/img002.png'">
+        <img src="img/img003.png" alt="Miniatura 3" onclick="document.getElementById('mainImage').src='img/img003.png'">
+        <img src="img/img004.jpg" alt="Miniatura 4" onclick="document.getElementById('mainImage').src='img/img004.jpg'">
+        <img src="img/img005.png" alt="Miniatura 5" onclick="document.getElementById('mainImage').src='img/img005.png'">
+        <img src="img/img006.png" alt="Miniatura 6" onclick="document.getElementById('mainImage').src='img/img006.png'">
+    </div>
+    
+    <div class="nav-buttons">
+        <button>Inicio</button>
+        <button>Fin</button>
+    </div>
+
+</body>
+</html>

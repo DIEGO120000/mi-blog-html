@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 40px;
+}
+
+h2 {
+    color: #375F85;
+    text-align: center;
+}
+
+/* Estilos para dividir el contenido en columnas */
+.texto-columnas {
+    /* Divide el contenido en 3 columnas */
+    column-count: 3;
+    /* Espacio entre cada columna */
+    column-gap: 30px; 
+    /* Regla divisora entre columnas (1px, sólido, color gris) */
+    column-rule: 1px solid #ccc; 
+    /* Justifica el texto dentro de cada columna */
+    text-align: justify; 
+}

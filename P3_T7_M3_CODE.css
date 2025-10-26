@@ -1,0 +1,160 @@
+/* ------------------ Estilos Globales ------------------ */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4; /* Fondo claro */
+    text-align: center;
+    color: #333; /* Color de texto principal */
+    font-size: 0.9em;
+}
+
+header {
+    color: #375F85; /* Azul oscuro */
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+/* ------------------ 1. Columnas de texto ------------------ */
+.columnas-texto {
+    column-count: 2; /* Dos columnas */
+    column-gap: 30px;
+    column-rule: 1px solid #ccc; /* Línea divisora */
+    text-align: justify;
+    margin-bottom: 40px;
+    max-width: 900px; /* Limita el ancho del texto */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* ------------------ 2. Contenedor Flexbox con Tarjetas 3D ------------------ */
+.contenedor-flex {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Envuelve las tarjetas si no caben */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 20px; /* Espacio entre elementos Flex */
+    margin-bottom: 40px;
+}
+
+/* Estilos de la tarjeta 3D */
+.tarjeta-3d {
+    width: 200px;
+    height: 150px;
+    perspective: 800px; /* Profundidad 3D */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s; /* Transición suave para la rotación */
+}
+
+.tarjeta-3d:hover .card-inner {
+    transform: rotateY(180deg); /* Rotación al hacer hover */
+}
+
+/* Estilos de las caras (frente y atrás) */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara trasera al inicio */
+    border-radius: 10px;
+    
+    /* Flexbox para centrar el texto dentro de la tarjeta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card-front {
+    background-color: #50911E; /* Verde oscuro */
+}
+
+.card-back {
+    background-color: #68b12f; /* Verde más claro */
+    transform: rotateY(180deg); /* La cara de atrás inicia girada */
+}
+
+/* ------------------ 3. Botones 2D (Transformación y Transición) ------------------ */
+.botones-2d {
+    margin-bottom: 40px;
+}
+
+.btn-2d {
+    background-color: #375F85; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 0 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; /* Transición para color y transform */
+}
+
+.btn-2d:hover {
+    transform: rotate(15deg) scale(1.2); /* Gira y agranda */
+    background-color: #50911E; /* Cambio de color */
+}
+
+/* ------------------ 4. Enlaces animados (Transición) ------------------ */
+.enlace-animado {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #375F85;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición para suavizar el hover */
+}
+
+.enlace-animado:hover {
+    transform: scale(1.1);
+    color: #68b12f;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+/* ------------------ Responsive (Media Query) ------------------ */
+@media (max-width: 600px) {
+    
+    /* El texto de columna pasa a ser una sola columna en móvil */
+    .columnas-texto {
+        column-count: 1;
+        padding: 0 10px;
+    }
+
+    /* Las tarjetas en Flexbox se adaptan al ancho completo */
+    .tarjeta-3d {
+        width: 80%; /* Ocupa la mayor parte del ancho */
+        height: 150px;
+    }
+    
+    /* Los botones también se adaptan para ser más grandes */
+    .btn-2d {
+        width: 80%;
+        margin-bottom: 10px;
+        display: block; /* Ocupa su propia línea */
+    }
+
+    /* Los enlaces animados se apilan verticalmente */
+    .enlaces-animados a {
+        display: block;
+    }
+}

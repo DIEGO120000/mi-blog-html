@@ -1,0 +1,109 @@
+/* ------------------ Título Llamativo (Animado) ------------------ */
+header {
+    text-align: center;
+    margin: 20px 0 40px 0; /* Más espacio inferior */
+}
+
+.titulo-principal {
+    font-family: 'Verdana', sans-serif;
+    font-size: 3em;
+    color: #50911E; /* Verde */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Sombra de texto con efecto 3D sutil */
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.2); 
+    
+    /* Aplicar la animación al título */
+    animation: tituloAnim 2s ease-in-out infinite alternate;
+}
+
+/* Definición de la animación del título */
+@keyframes tituloAnim {
+    0% { transform: scale(1); color: #50911E; }
+    50% { transform: scale(1.05); color: #375F85; } /* Escala y cambia de color a la mitad */
+    100% { transform: scale(1); color: #50911E; }
+}
+
+/* ------------------ Menú Avanzado (Base UL) ------------------ */
+#nav ul {
+    list-style: none; /* Quitar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos de los elementos principales (LI) */
+#menuHorizontal > li {
+    background-color: #375F85; /* Azul oscuro */
+    border: 3px outset #375F85; /* Borde con efecto 3D */
+    color: white;
+    cursor: pointer;
+    display: inline-block; /* Disposición horizontal */
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 2px;
+    padding: 5px 10px;
+    position: relative; /* Clave para posicionar el submenú */
+    text-align: center;
+    vertical-align: top;
+    /* Solo transiciones seguras para el hover base */
+    transition: background-color 0.6s ease, padding-top 0.6s ease, text-shadow 0.6s ease;
+}
+
+/* Hover de la opción principal */
+#menuHorizontal > li:hover {
+    background-color: #50911E; /* Cambia a verde al pasar el cursor */
+}
+
+/* ------------------ Submenú (UL.submenu) ------------------ */
+#menuHorizontal .submenu {
+    /* Estado inicial: oculto y transformado */
+    animation-duration: 0.8s;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 5px #000;
+    display: none; /* Ocultar por defecto */
+    left: 1px;
+    padding: 5px 0;
+    position: absolute; /* Posicionamiento relativo al LI padre */
+    top: 36px;
+    z-index: 10;
+    background: #d8dbe6; /* Fondo gris claro */
+}
+
+/* Submenú LI - Opciones internas */
+#menuHorizontal .submenu li {
+    display: block; /* Disposición vertical */
+    padding: 5px 15px;
+    color: #333;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+/* Hover de las opciones internas del submenú */
+#menuHorizontal .submenu li:hover {
+    background-color: #abc; /* Fondo azul claro al pasar el cursor */
+}
+
+/* Mostrar Submenú al hacer hover en el LI principal */
+#menuHorizontal > li:hover > .submenu {
+    display: block;
+    /* Aplicar la animación de despliegue al submenú */
+    animation-name: subMenuAnim; 
+    animation-fill-mode: forwards; /* Mantiene el estado final */
+}
+
+/* ------------------ Animaciones con @keyframes ------------------ */
+
+/* Animación de despliegue del submenú */
+@keyframes subMenuAnim {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.5); 
+        left: -150px; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1); 
+        left: 1px; 
+    }
+}

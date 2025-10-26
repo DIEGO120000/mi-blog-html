@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+/* ------------------ Contenedor de tarjetas (Flexbox) ------------------ */
+.contenedor-tarjetas {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen de línea */
+    gap: 20px;
+}
+
+/* ------------------ Tarjeta base (Define perspectiva y tamaño) ------------------ */
+.tarjeta {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px; /* Profundidad 3D */
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Interior de la tarjeta (Es el que rota) */
+.tarjeta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover: rotación 3D + efecto de escala y sombra */
+.tarjeta:hover {
+    transform: scale(1.1); /* Agranda la tarjeta */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Sombra de profundidad */
+}
+
+.tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg); /* Rota 180 grados al hacer hover */
+}
+
+/* ------------------ Caras (Frente y Atrás) ------------------ */
+.tarjeta-frente, .tarjeta-atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara cuando no está visible */
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    /* Transición suave para el cambio de color al hover (opcional) */
+    transition: background-color 0.6s ease;
+}
+
+/* Colores originales de las caras */
+.tarjeta-frente {
+    background-color: #375F85; /* Azul oscuro */
+}
+
+.tarjeta-atras {
+    background-color: #50911E; /* Verde */
+    transform: rotateY(180deg); /* La cara trasera inicia girada */
+}
+
+/* ------------------ Media Queries (Diseño Responsive) ------------------ */
+
+/* Para pantallas medianas (ej. tablets) */
+@media (max-width: 768px) {
+    /* Las tarjetas se apilan verticalmente */
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Ajustes menores de tamaño para que quepan mejor */
+    .tarjeta {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* Para pantallas pequeñas (ej. móviles) */
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 90%; /* Ocupa casi todo el ancho */
+        height: 180px;
+    }
+    .tarjeta-frente, .tarjeta-atras {
+        font-size: 1em;
+    }
+}
