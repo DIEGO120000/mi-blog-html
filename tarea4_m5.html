@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 4 - Funciones</title>
+</head>
+<body>
+
+    <h1>Calculadora de Promedio</h1>
+    <script>
+        // 1. Definición de la Función calcularPromedio()
+        function calcularPromedio(c1, c2, c3) {
+            // Calcular el promedio
+            // Usamos parseFloat para asegurar que son números
+            const promedio = (c1 + c2 + c3) / 3;
+            let estado;
+
+            // Determinar si aprueba (>= 70)
+            if (promedio >= 70) {
+                estado = "APROBADO. ¡Felicidades!";
+            } else {
+                estado = "REPROBADO. Debe mejorar.";
+            }
+
+            // Mostrar el resultado final
+            document.write("<h2>--- Resultados ---</h2>");
+            document.write("Notas Ingresadas: " + c1 + ", " + c2 + ", " + c3 + "<br>");
+            document.write("Promedio Final: " + promedio.toFixed(2) + "<br>");
+            document.write("Estado: **" + estado + "**");
+        }
+
+        // 2. SOLICITUD DE DATOS AL USUARIO
+        const nota1 = parseFloat(prompt("Ingrese la primera calificación:"));
+        const nota2 = parseFloat(prompt("Ingrese la segunda calificación:"));
+        const nota3 = parseFloat(prompt("Ingrese la tercera calificación:"));
+
+        // 3. Llamada a la función con las notas ingresadas
+        calcularPromedio(nota1, nota2, nota3);
+
+    </script>
+
+</body>
+</html>
