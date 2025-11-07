@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2 - Selectivas</title>
+</head>
+<body>
+
+    <h1>Verificación de Edad</h1>
+
+    <script>
+        // 1. Solicitud de edad
+        let edad = parseInt(prompt("Ingrese su edad:"));
+        let mensaje;
+
+        // 2. Estructura Selectiva (if, else if, else)
+        if (edad < 12) {
+            mensaje = "Eres un niño.";
+        } else if (edad >= 13 && edad <= 17) {
+            mensaje = "Eres un adolescente.";
+        } else if (edad >= 18) {
+            mensaje = "Eres un adulto.";
+        } else {
+            // Caso para entradas no válidas (NaN, etc.)
+            mensaje = "Por favor, ingrese una edad válida.";
+        }
+
+        // 3. Mostrar el resultado (con alert y en la página)
+        alert(mensaje);
+        document.write("<h2>Resultado: " + mensaje + "</h2>");
+
+    </script>
+
+</body>
+</html>
