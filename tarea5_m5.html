@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 5 - Eventos</title>
+    <style>
+        /* Estilo para que el cambio sea notorio */
+        #campo-interactivo {
+            padding: 8px;
+            border: 2px solid #3498db; /* Borde azul */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Prueba de Eventos JavaScript</h1>
+
+    <button onclick="saludar()">Haz Clic para Saludar</button>
+    <hr>
+
+    <p>Escribe algo en el campo de abajo:</p>
+    <input type="text" id="campo-interactivo" oninput="cambiarFondo()">
+
+    <script>
+        // 1. Función para el evento onclick
+        function saludar() {
+            alert("¡Hola! Un saludo desde JavaScript.");
+        }
+
+        // 2. Función para el evento oninput
+        function cambiarFondo() {
+            const inputElemento = document.getElementById("campo-interactivo");
+
+            // Si el campo tiene texto (longitud > 0), pon fondo verde claro.
+            if (inputElemento.value.length > 0) {
+                inputElemento.style.backgroundColor = "#e6ffe6"; // Verde claro
+            } else {
+                // Si está vacío, quita el fondo.
+                inputElemento.style.backgroundColor = "white";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
