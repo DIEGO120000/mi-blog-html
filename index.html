@@ -1,130 +1,869 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portafolio Digital - Diego F. Jiménez</title>
+
     <style>
+
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 20px 10px; text-align: center; }
-        nav { background: #444; padding: 10px; text-align: center; }
-        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-        section { background: #fff; margin: 20px auto; padding: 20px; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h2 { color: #333; }
-        footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 20px; }
+
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+
+        nav { background: #444; color: white; padding: 10px; }
+
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+
+        .contenedor { width: 80%; max-width: 1000px; margin: auto; overflow: hidden; padding: 20px 0; }
+
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+
+        .entrada-blog, .apartado { background: white; border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; border-radius: 5px; }
+
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 0; }
+
+        .seccion-proyectos ul { list-style: none; padding: 0; }
+
+        .seccion-proyectos li { margin-bottom: 10px; background: #e9e9e9; padding: 10px; border-left: 5px solid #007bff; }
+
+        .seccion-proyectos[id="proyecto2"] { border-left: 5px solid #28a745; }
+
+        .seccion-proyectos[id="proyecto2"] h4 { color: #dc3545; }
+
+
+
+        /* Estilo específico para los enlaces de fotos */
+
+        .enlaces-fotos p {
+
+            margin: 5px 0;
+
+            padding-left: 10px;
+
+            border-left: 3px solid #ccc;
+
+        }
+
+        .enlaces-fotos a {
+
+            display: inline-block;
+
+            margin-right: 15px;
+
+            text-decoration: none;
+
+            color: #007bff;
+
+            font-weight: bold;
+
+        }
+
     </style>
+
 </head>
+
 <body>
 
-<header>
-    <h1>Portafolio Digital</h1>
-    <p>Nombre: <strong>Diego Félix Jiménez Mendoza</strong></p>
-</header>
 
-<nav>
-    <a href="#introduccion">Inicio</a>
-    <a href="#modulo1">Módulo 1</a>
-    <a href="#modulo2">Módulo 2</a>
-    <a href="#modulo3">Módulo 3</a>
-    <a href="#modulo4">Módulo 4</a>
-    <a href="#modulo5">Módulo 5</a>
-    <a href="#contacto">Contacto</a>
-</nav>
 
-<section id="introduccion" class="module">
-    <h2>📌 Introducción</h2>
-    <p>Este portafolio contiene trabajos, evidencias, proyectos y actividades realizadas durante el desarrollo de la materia de Programación.</p>
-</section>
+    <header>
 
-<section id="modulo1" class="module">
-    <h2>📘 MÓDULO 1 – Introducción a la Programación</h2>
-    <ul>
-        <li>✅ Actividades teóricas</li>
-        <li>✅ Prácticas con variables y operadores</li>
-        <li>✅ Evidencias del trabajo realizado</li>
-    </ul>
-</section>
+        <h1>Portafolio Digital de Diego Fernando Jiménez de León</h1>
 
-<section id="modulo2" class="module">
-    <h2>📗 MÓDULO 2 – Condicionales y estructuras básicas</h2>
-    <ul>
-        <li>✅ Actividad 1</li>
-        <li>✅ Actividad 2</li>
-        <li>✅ Evidencias de código y resultados</li>
-    </ul>
-</section>
+        <p>Evidencia de Proyectos Web HTML5</p>
 
-<section id="modulo3" class="module">
-    <h2>📙 MÓDULO 3 – Ciclos y funciones</h2>
-    <ul>
-        <li>✅ Ciclos For y While</li>
-        <li>✅ Funciones y procedimientos</li>
-        <li>✅ Ejercicios enviados al docente</li>
-    </ul>
-</section>
+    </header>
 
-<section id="modulo4" class="module">
-    <h2>📕 MÓDULO 4 – Arreglos y matrices</h2>
-    <ul>
-        <li>✅ Arreglos unidimensionales</li>
-        <li>✅ Matrices</li>
-        <li>✅ Evidencias y resultados</li>
-    </ul>
-</section>
 
-<!-- INICIO DEL MODULO 5 -->
-<section id="modulo5" class="module">
-    <h2>🔧 MÓDULO 5 – PROYECTOS JAVASCRIPT</h2>
-    <p>Este módulo contiene proyectos prácticos utilizando HTML, CSS y JavaScript.</p>
 
-    <ul>
-        <li>✅ <strong>Proyecto Rectángulo</strong> → 
-            <a href="rectangulo.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T1_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T1_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
+    <nav>
 
-        <li>✅ <strong>Proyecto Edad Exacta</strong> → 
-            <a href="edadexacta.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T2_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T2_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
+        <a href="#introduccion">Introducción</a>
 
-        <li>✅ <strong>Proyecto Zona Horaria</strong> → 
-            <a href="zonahoraria.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T3_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T3_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
+        <a href="#proyectos">Proyectos</a>
 
-        <li>✅ <strong>Proyecto Libros</strong> → 
-            <a href="libro.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T4_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T4_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
+        <a href="#proyecto2">Proyecto 2</a>
 
-        <li>✅ <strong>Proyecto Carro</strong> → 
-            <a href="carro.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T5_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T5_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
+        <a href="#proyecto3">Proyecto 3</a>
 
-        <li>✅ <strong>Proyecto Matrícula</strong> → 
-            <a href="matricula.html" target="_blank">Abrir Proyecto</a> | 
-            <a href="CODE_T6_P2_M5.PNG" target="_blank">Código</a> | 
-            <a href="RESULTADO_T6_P2_M5.PNG" target="_blank">Resultado</a>
-        </li>
-    </ul>
-</section>
-<!-- FIN DE PARTE 1 -->
-<section id="contacto" class="module">
-    <h2>📞 Contacto</h2>
-    <p>Correo institucional: <strong>dfelix3868@elpoli.edu.sv</strong></p>
-    <p>Docente: <strong>Ing. Carmelo Alcides Ayala</strong></p>
-</section>
+        <a href="#proyecto1modulo3">Proyecto 1 Módulo 3</a>
 
-<footer>
-    <p>Portafolio Académico – Programación – Universidad Don Bosco</p>
-</footer>
+        <a href="#proyecto2modulo3">Proyecto 2 Módulo 3</a>
+
+        <a href="#proyecto3modulo3">Proyecto 3 Módulo 3</a>
+
+        <a href="#proyecto1modulo4">Proyecto 1 Módulo 4</a>
+
+        <a href="#proyecto2modulo4">Proyecto 2 Módulo 4</a>
+
+        <a href="#proyecto1modulo5">Proyecto 1 Módulo 5</a>
+
+        <a href="#proyecto2modulo5">Proyecto 2 Módulo 5</a>
+
+        <a href="#reflexion">Reflexión Final</a>
+
+    </nav>
+
+
+
+    <div class="contenedor">
+
+
+
+        <section id="introduccion" class="apartado">
+
+            <h2>Introducción Personal</h2>
+
+            <p>¡Hola! Soy <strong>Diego Fernando Jiménez de León</strong>. Esta página funciona como mi portafolio digital para la asignatura de Desarrollo Web. Aquí presento mi progreso y los proyectos de maquetación que desarrollé utilizando la estructura semántica de HTML5, organizados en las tres categorías solicitadas.</p>
+
+        </section>
+
+
+
+        <section id="proyectos">
+
+            <h2>EVIDENCIA DE TRABAJOS</h2>
+
+
+
+            <article id="investigacion" class="entrada-blog seccion-proyectos">
+
+                <h3>1. INVESTIGACIÓN (Mi Perfil Académico)</h3>
+
+                <p>Este proyecto representa la investigación sobre mi propio perfil y trayectoria académica. <strong>Archivo esperado:</strong> perfil.html</p>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Mi Perfil Académico:</strong>
+
+                        <a href="perfil.html" target="_blank">Ver Proyecto de Perfil</a>
+
+                        (Demostración de listas y enlaces)
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="paginas-sugeridas" class="entrada-blog seccion-proyectos">
+
+                <h3>2. PÁGINAS WEB SUGERIDAS (Proyectos Finales)</h3>
+
+                <p>Estos proyectos aplican el uso de tablas, imágenes, y la estructura semántica de documentos web. <strong>Archivos esperados:</strong> the_office.html y centroamerica.html</p>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Programa de TV Favorito (The Office):</strong>
+
+                        <a href="the_office.html" target="_blank">Ver Proyecto de TV</a>
+
+                        (Uso de imágenes y formato de texto)
+
+                    </li>
+
+                    <li>
+
+                        <strong>Países de Centroamérica:</strong>
+
+                        <a href="centroamerica.html" target="_blank">Ver Proyecto Centroamérica</a>
+
+                        (Uso de tablas y estructura semántica)
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto1" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 1 – EJEMPLOS PRÁCTICOS</h3>
+
+                <p>Estos archivos demuestran la aplicación progresiva de etiquetas básicas de HTML5. <strong>Archivos esperados:</strong> ejemplo2.html a ejemplo7.html</p>
+
+                <ul>
+
+                    <li><a href="ejemplo2.html" target="_blank">Ejemplo Práctico 2</a> (Estructura Semántica Básica)</li>
+
+                    <li><a href="ejemplo3.html" target="_blank">Ejemplo Práctico 3</a> (Etiquetas de Texto, Imagen y Lista)</li>
+
+                    <li><a href="ejemplo4.html" target="_blank">Ejemplo Práctico 4</a> (Negritas, Citas y Encabezados)</li>
+
+                    <li><a href="ejemplo5.html" target="_blank">Ejemplo Práctico 5</a> (Vínculos e Imágenes)</li>
+
+                    <li><a href="ejemplo6.html" target="_blank">Ejemplo Práctico 6</a> (Uso de Tablas o Formularios)</li>
+
+                    <li><a href="ejemplo7.html" target="_blank">Ejemplo Práctico 7</a> (Práctica de Estructura Final)</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto2" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 2 – MUNDO BICICLETA (Guía 2)</h3>
+
+                <p>Este segundo proyecto presenta ejercicios más completos que aplican la estructura semántica y la integración de contenido multimedia, enfocados en la Guía 2.</p>
+
+                
+
+                <h4>Archivos de Proyecto (Corregidos)</h4>
+
+                <ul>
+
+                    <li><a href="ejemplo.1.html" target="_blank">Ejemplo Práctico 1: Enlaces de Anclaje</a></li>
+
+                    <li><a href="ejemplo.2.html" target="_blank">Ejemplo Práctico 2: Proyecto Centroamérica</a></li>
+
+                    <li><a href="ejemplo.3.html" target="_blank">Ejemplo Práctico 3: Colores y Estilos</a></li>
+
+                    <li><a href="Mundo Bicicleta.html" target="_blank">Proyecto Mundo Bicicleta (Sitio Web Temático)</a></li>
+
+                </ul>
+
+
+
+                <hr>
+
+                <h4>Evidencia Fotográfica (JPG)</h4>
+
+                <div class="enlaces-fotos">
+
+                    <p>
+
+                        **Ejemplo 1:** <a href="fotos.ejemplo.codigo.1.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="fotos.ejemplo.resultado.1.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 2:** <a href="fotos.ejemplo.codigo.2.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="fotos.ejemplo.resultado.2.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 3:** <a href="fotos.ejemplo.codigo.3.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="fotos.ejemplo.resultado.3.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Mundo Bicicleta:** <a href="fotos.mundo_bicicleta.codigo.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="fotos.mundo_bicicleta.resultado.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article id="proyecto3" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 3 – MULTIMEDIA Y FORMULARIOS</h3>
+
+                <p>Estos proyectos integran el uso de elementos multimedia y formularios web para la interacción con el usuario. <strong>Archivos esperados:</strong> recursos.html y formulario.html</p>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Recursos Multimedia:</strong>
+
+                        <a href="recursos.html" target="_blank">Ver Proyecto Multimedia</a>
+
+                        (Uso de audio, video e integración de medios)
+
+                    </li>
+
+                    <li>
+
+                        <strong>Formulario:</strong>
+
+                        <a href="formulario.html" target="_blank">Ver Proyecto de Formulario</a>
+
+                        (Uso de etiquetas de formulario, entrada de texto y botones)
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto1modulo3" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 1 – MÓDULO 3</h3>
+
+                <p>Esta sección presenta tres ejemplos correspondientes al Módulo 3, cada uno con sus evidencias fotográficas individuales (código, resultado y CSS), además del nuevo proyecto “Tablero”.</p>
+
+
+
+                <ul>
+
+                    <li><strong>Ejemplo.1 Módulo 3:</strong> <a href="ejemplo1_mod3.html" target="_blank">Ver Ejemplo</a></li>
+
+                    <li><strong>Ejemplo.2 Módulo 3:</strong> <a href="ejemplo2_mod3.html" target="_blank">Ver Ejemplo</a></li>
+
+                    <li><strong>Ejemplo.3 Módulo 3:</strong> <a href="ejemplo3_mod3.html" target="_blank">Ver Ejemplo</a></li>
+
+                    <li><strong>Proyecto Tablero:</strong> <a href="tablero.html" target="_blank">Ver Proyecto Tablero</a></li>
+
+                </ul>
+
+
+
+                <h4>Evidencias del Tablero y Ejemplos (Archivos Adaptados)</h4>
+
+                <div class="enlaces-fotos">
+
+                    <p>
+
+                        **Ejemplo 1:** <a href="foto.codigo.1mod3.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto.resultado.1mod3.jpg" target="_blank">Ver Resultado</a> | 
+
+                        <a href="foto.css.1mod3.jpg" target="_blank">Ver CSS</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 2:** <a href="foto.codigo.2mod3.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto.resultado.2mod3.jpg" target="_blank">Ver Resultado</a> | 
+
+                        <a href="foto.css.2mod3.jpg" target="_blank">Ver CSS</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 3:** <a href="foto.codigo.3mod3.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto.resultado.3mod3.jpg" target="_blank">Ver Resultado</a> | 
+
+                        <a href="foto.css.3mod3.jpg" target="_blank">Ver CSS</a>
+
+                    </p>
+
+                    <p>
+
+                        **Proyecto Tablero:** <a href="foto_code_tablero.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="resutado_ejemplo_tablero.jpg" target="_blank">Ver Resultado</a> | 
+
+                        <a href="foto_css_tablero.jpg" target="_blank">Ver CSS</a>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article id="proyecto2modulo3" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 2 – MÓDULO 3</h3>
+
+                <p>Esta sección presenta el Proyecto 2 del Módulo 3, con su HTML, CSS y resultados fotográficos.</p>
+
+
+
+                <ul>
+
+                    <li><strong>Archivo HTML:</strong> <a href="p2_t1_m3.html" target="_blank">Ver Proyecto 2</a></li>
+
+                    <li><strong>Archivo CSS:</strong> <a href="p2_t1_m3.css" target="_blank">Ver CSS</a></li>
+
+                    <li><strong>Resultados:</strong> 
+
+                        <a href="resultado.1_p2_t1_m3.jpg" target="_blank">Resultado 1</a> | 
+
+                        <a href="resultado.2_p2_t1_m3.jpg" target="_blank">Resultado 2</a> | 
+
+                        <a href="resultado.3_p2_t1_m3.jpg" target="_blank">Resultado 3</a>
+
+                    </li>
+
+                    <li><strong>Código:</strong> <a href="code_p2_t1_m3.jpg" target="_blank">Ver Código</a></li>
+
+                    <li><strong>CSS:</strong> <a href="css_p2_t1_m3.jpg" target="_blank">Ver CSS</a></li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto3modulo3" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 3 – MÓDULO 3</h3>
+
+                <p>Este apartado contiene las diez tareas del Proyecto 3 del Módulo 3, cada una con sus archivos correspondientes (HTML, CSS, Resultado y Código).</p>
+
+
+
+                <ul>
+
+                    <li><strong>Tarea 1:</strong> 
+
+                        <a href="P3_T1_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T1_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T1_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T1_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 2:</strong> 
+
+                        <a href="P3_T2_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T2_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T2_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T2_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 3:</strong> 
+
+                        <a href="P3_T3_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T3_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T3_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T3_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 4:</strong> 
+
+                        <a href="P3_T4_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T4_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T4_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T4_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 5:</strong> 
+
+                        <a href="P3_T5_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T5_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T5_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T5_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 6:</strong> 
+
+                        <a href="P3_T6_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T6_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T6_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T6_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 7:</strong> 
+
+                        <a href="P3_T7_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T7_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T7_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T7_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 8:</strong> 
+
+                        <a href="P3_T8_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T8_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T8_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T8_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 9:</strong> 
+
+                        <a href="P3_T9_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T9_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T9_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T9_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                    <li><strong>Tarea 10:</strong> 
+
+                        <a href="P3_T10_M3.html" target="_blank">Archivo HTML</a> | 
+
+                        <a href="P3_T10_M3_CODE.css" target="_blank">Archivo CSS</a> | 
+
+                        <a href="P3_T10_M3_RESULTADO.jpg" target="_blank">Resultado</a> | 
+
+                        <a href="P3_T10_M3_CODE.jpg" target="_blank">Código</a>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto1modulo4" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 1 – MÓDULO 4 (C# / Visual Studio)</h3>
+
+                <p>Este apartado presenta la evidencia de las tareas del **Proyecto 1 - Módulo 4**, que consiste en programas de C# (C Sharp). Los enlaces de "Código Fuente" permiten descargar el archivo `.cs` para revisión, y las imágenes muestran el resultado en consola.</p>
+
+
+
+                <ul>
+
+                    <li>
+
+                        <strong>Tarea 1:</strong>
+
+                        <a href="P1_T1_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> | 
+
+                        <a href="RESULTADO_P1_T1_M4.jpg" target="_blank">Ver Resultado Tarea 1</a> |
+
+                        <a href="CODE_P1_T1_M4.jpg" target="_blank">Ver Código en Imagen</a>
+
+                    </li>
+
+                    <li>
+
+                        <strong>Tarea 2:</strong>
+
+                        <a href="P1_T2_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> | 
+
+                        <a href="RESULTADO_P1_T2_M4.jpg" target="_blank">Ver Resultado Tarea 2</a> |
+
+                        <a href="CODE_P1_T2_M4.jpg" target="_blank">Ver Código en Imagen</a>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto2modulo4" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 2 – MÓDULO 4 (C# / Visual Studio)</h3>
+
+                <p>Este apartado presenta la evidencia de las cinco tareas del Proyecto 2 del Módulo 4. Cada tarea incluye el archivo de código fuente (.cs), la imagen del código y la imagen del resultado.</p>
+
+
+
+                <ul>
+
+                    <li>
+
+                        <strong>Tarea 1:</strong>
+
+                        <a href="P2_T1_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> |
+
+                        <a href="CODE_P2_T1_M4.jpg" target="_blank">Ver Código</a> |
+
+                        <a href="RESULTADO_P2_T1_M4.jpg" target="_blank">Ver Resultado</a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <strong>Tarea 2:</strong>
+
+                        <a href="P2_T2_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> |
+
+                        <a href="CODE_P2_T2_M4.jpg" target="_blank">Ver Código</a> |
+
+                        <a href="RESULTADO_P2_T2_M4.jpg" target="_blank">Ver Resultado</a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <strong>Tarea 3:</strong>
+
+                        <a href="P2_T3_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> |
+
+                        <a href="CODE_P2_T3_M4.jpg" target="_blank">Ver Código</a> |
+
+                        <a href="RESULTADO_P2_T3_M4.jpg" target="_blank">Ver Resultado</a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <strong>Tarea 4:</strong>
+
+                        <a href="P2_T4_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> |
+
+                        <a href="CODE_P2_T4_M4.jpg" target="_blank">Ver Código</a> |
+
+                        <a href="RESULTADO_P2_T4_M4.jpg" target="_blank">Ver Resultado</a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <strong>Tarea 5:</strong>
+
+                        <a href="P2_T5_M4.cs" target="_blank">Descargar Código Fuente (.cs)</a> |
+
+                        <a href="CODE_P2_T5_M4.jpg" target="_blank">Ver Código</a> |
+
+                        <a href="RESULTADO_P2_T5_M4.jpg" target="_blank">Ver Resultado</a>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article id="proyecto1modulo5" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 1 – MÓDULO 5 (Nueva Sección)</h3>
+
+                <p>Este apartado incluye los cinco ejercicios del Proyecto 1 del Módulo 5. Cada ejercicio tiene su enlace a la **Tarea**, la **Foto del Código** y la **Foto del Resultado**.</p>
+
+                
+
+                <hr>
+
+                
+
+                <h4>Ejercicios y Evidencias</h4>
+
+                <div class="enlaces-fotos">
+
+                    <p>
+
+                        **Tarea 1:** <a href="tarea1_m5.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="foto_codigo_1_m5.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto_resultado_1_m5.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Tarea 2:** <a href="tarea2_m5.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="foto_codigo_2_m5.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto_resultado_2_m5.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Tarea 3:** <a href="tarea3_m5.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="foto_codigo_3_m5.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto_resultado_3_m5.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Tarea 4:** <a href="tarea4_m5.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="foto_codigo_4_m5.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto_resultado_4_m5.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Tarea 5:** <a href="tarea5_m5.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="foto_codigo_5_m5.jpg" target="_blank">Ver Código</a> | 
+
+                        <a href="foto_resultado_5_m5.jpg" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            
+
+            <article id="proyecto2modulo5" class="entrada-blog seccion-proyectos">
+
+                <h3>PROYECTO 2 – MÓDULO 5 (Programación Orientada a Objetos)</h3>
+
+                <p>Este apartado contiene los **seis ejercicios** de la **Guía 2** del **Proyecto 2 del Módulo 5**, enfocados en el uso de **Clases y Objetos (POO)**. Incluye el archivo principal de la tarea, la foto del código y la foto del resultado.</p>
+
+                
+
+                <hr>
+
+                
+
+                <h4>Ejercicios de POO y Objetos Incorporados</h4>
+
+                <div class="enlaces-fotos">
+
+                    <p>
+
+                        **Ejemplo 1 (Rectángulo):** <a href="P2_T1_M5/rectangulo.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T1_M5/CODE_T1_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T1_M5/RESULTADO_T1_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 2 (Edad Exacta):** <a href="P2_T2_M5/edadexacta.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T2_M5/CODE_T2_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T2_M5/RESULTADO_T2_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 3 (Zona Horaria):** <a href="P2_T3_M5/zonahoraria.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T3_M5/CODE_T3_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T3_M5/RESULTADO_T3_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 4 (Libros):** <a href="P2_T4_M5/libro.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T4_M5/CODE_T4_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T4_M5/RESULTADO_T4_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 5 (Clase Carro):** <a href="P2_T5_M5/carro.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T5_M5/CODE_T5_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T5_M5/RESULTADO_T5_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                    <p>
+
+                        **Ejemplo 6 (Matrícula):** <a href="P2_T6_M5/matricula.html" target="_blank">Ver Tarea</a> | 
+
+                        <a href="P2_T6_M5/CODE_T6_P2_M5.PNG" target="_blank">Ver Código</a> | 
+
+                        <a href="P2_T6_M5/RESULTADO_T6_P2_M5.PNG" target="_blank">Ver Resultado</a>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            </section>
+
+
+
+        <section id="reflexion" class="apartado">
+
+            <h2>Reflexión Final</h2>
+
+            <p>Durante el desarrollo de estos proyectos, reforcé mis conocimientos sobre la estructura semántica del HTML5, el uso de CSS para mejorar la presentación visual y la importancia de la organización del contenido en la web. Este portafolio muestra mi avance en la comprensión y aplicación práctica del desarrollo web.</p>
+
+        </section>
+
+
+
+    </div>
+
+
+
+    <footer>
+
+        <p>Portafolio de Diego Fernando Jiménez de León – 2025</p>
+
+        <p style="font-size: 0.8em; margin-top: 5px;">Nota: Los archivos de JavaScript se encuentran en subcarpetas (Ejemplo1, Ejemplo2, etc.)</p>
+
+    </footer>
+
+
 
 </body>
+
 </html>
