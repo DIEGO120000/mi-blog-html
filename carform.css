@@ -1,0 +1,22 @@
+﻿/* carform.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde claro */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #388e3c; /* Verde oscuro */
+    margin-bottom: 25px;
+}
+
+#car-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
