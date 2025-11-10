@@ -1,0 +1,23 @@
+﻿/* infoalumno.css */
+#info-alumno {
+    margin-top: 30px;
+    padding: 15px;
+    border-left: 5px solid #007bff; /* Barra azul distintiva */
+    background-color: #e9f7ff;
+    border-radius: 5px;
+}
+
+    #info-alumno h2 {
+        color: #007bff;
+        margin-top: 0;
+    }
+
+.estado-aprobado {
+    color: green;
+    font-weight: bold;
+}
+
+.estado-reprobado {
+    color: red;
+    font-weight: bold;
+}

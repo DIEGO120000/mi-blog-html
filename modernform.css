@@ -1,0 +1,54 @@
+﻿/* modernform.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Gris muy claro */
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4a4e69; /* Gris azulado */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+button {
+    background-color: #5cb85c; /* Verde éxito */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #4cae4c;
+    }
