@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo 3: Zona Horaria</title>
+    <link rel="stylesheet" href="elegant.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Reloj de Zonas Horarias</h1>
+
+        <label for="selectorZona">Selecciona una Ciudad:</label>
+
+        <select id="selectorZona" onchange="mostrarHora()">
+            <option value="">-- Elige una zona --</option>
+            <option value="America/New_York">Nueva York (EST)</option>
+            <option value="Europe/London">Londres (GMT)</option>
+            <option value="Europe/Madrid">Madrid (CET)</option>
+            <option value="Asia/Tokyo">Tokio (JST)</option>
+            <option value="America/Mexico_City">Ciudad de México (CST)</option>
+        </select>
+
+        <div id="zona-display"></div>
+        <div id="hora-actual"></div>
+    </div>
+
+    <script src="zonahoraria.js"></script>
+
+</body>
+</html>

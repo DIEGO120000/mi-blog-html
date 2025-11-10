@@ -1,0 +1,49 @@
+﻿/* elegant.css */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f9fa; /* Gris muy claro */
+    padding: 20px;
+    text-align: center;
+    color: #343a40; /* Gris oscuro elegante */
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #007bff; /* Azul primario */
+    margin-bottom: 25px;
+}
+
+select {
+    padding: 10px;
+    margin: 15px 0;
+    width: 80%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#hora-actual {
+    margin-top: 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #28a745; /* Verde para la hora */
+    padding: 10px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#zona-display {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #6c757d;
+}
