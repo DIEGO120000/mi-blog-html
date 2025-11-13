@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Formularios Dinámicos</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Constructor de Formulario Dinámico</h1>
+    <form id="dynamicForm">
+        <div id="fieldsContainer">
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" name="nombre[]">
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button type="button" onclick="addField('nombre', 'text')">Agregar Nombre</button>
+            <button type="button" onclick="addField('correo', 'email')">Agregar Correo</button>
+            <button type="button" onclick="addField('comentario', 'textarea')">Agregar Comentario</button>
+            <button type="button" onclick="addField('archivo', 'file')">Agregar Archivo</button>
+        </div>
+
+        <button type="submit">Enviar Formulario</button>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
