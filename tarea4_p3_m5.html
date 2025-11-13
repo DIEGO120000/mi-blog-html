@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - Inserción Dinámica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #inputSection {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        #textInput {
+            width: 98%;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .controls button {
+            margin-right: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        #visibleSection {
+            border: 2px solid #0056b3;
+            padding: 15px;
+            min-height: 50px;
+            background-color: #e6f0ff;
+        }
+
+        .parrafo-item {
+            border-bottom: 1px dashed #aaa;
+            padding: 5px 0;
+        }
+
+            .parrafo-item:last-child {
+                border-bottom: none;
+            }
+    </style>
+</head>
+<body>
+    <h1>Inserción Dinámica de Contenido</h1>
+
+    <div id="inputSection">
+        <h2>Área de Entrada (Inicialmente Oculta)</h2>
+        <textarea id="textInput" placeholder="Escribe tu contenido aquí..."></textarea>
+        <div class="controls">
+            <button onclick="anexarParrafo()">Enviar/Anexar</button>
+            <button onclick="crearNuevoParrafo()">Crear Párrafo (Vacío)</button>
+            <button onclick="eliminarUltimoParrafo()">Eliminar Último</button>
+            <button onclick="insertarAntes()">Insertar Antes</button>
+        </div>
+    </div>
+
+    <h2>Sección Visible</h2>
+    <div id="visibleSection">
+        <p id="p1" class="parrafo-item">Párrafo de Referencia 1</p>
+    </div>
+
+    <script src="insercion.js"></script>
+</body>
+</html>
