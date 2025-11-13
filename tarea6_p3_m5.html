@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Editor de Tablas Dinámico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ff9800;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 50px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #tablaEditor {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+            #tablaEditor th, #tablaEditor td {
+                border: 1px solid #ff9800;
+                padding: 8px;
+                text-align: center;
+            }
+
+            #tablaEditor th {
+                background-color: #ff9800;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <h1>Editor de Tablas Dinámico</h1>
+
+    <div class="controls">
+        <h3>1. Crear Tabla (Inicial)</h3>
+        <label for="filasCrear">Filas:</label>
+        <input type="number" id="filasCrear" value="3" min="1">
+        <label for="colsCrear">Columnas:</label>
+        <input type="number" id="colsCrear" value="3" min="1">
+        <button onclick="crearTablaEditable()">Crear Tabla</button>
+    </div>
+
+    <div class="controls">
+        <h3>2. Actualizar Celda</h3>
+        <label for="filaActualizar">Fila (0+):</label>
+        <input type="number" id="filaActualizar" value="0" min="0">
+        <label for="columnaActualizar">Columna (0+):</label>
+        <input type="number" id="columnaActualizar" value="0" min="0">
+        <br><br>
+        <label for="nuevoValor">Nuevo Valor:</label>
+        <input type="text" id="nuevoValor" placeholder="Nuevo contenido" size="30">
+        <button onclick="actualizarCelda()">Actualizar Celda</button>
+    </div>
+
+    <div id="tabla-output-editor">
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>
