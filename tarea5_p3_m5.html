@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5 - Creación de Tabla Dinámica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #form-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        #tablaGenerada {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+            #tablaGenerada th, #tablaGenerada td {
+                border: 1px solid #333;
+                padding: 8px;
+                text-align: center;
+            }
+
+            #tablaGenerada th {
+                background-color: #333;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <h1>Creación de Tabla Dinámica</h1>
+
+    <div id="form-container">
+        <label for="filas">Número de Filas (Body):</label>
+        <input type="number" id="filas" value="3" min="1"><br><br>
+
+        <label for="columnas">Número de Columnas:</label>
+        <input type="number" id="columnas" value="3" min="1"><br><br>
+
+        <input type="checkbox" id="conEncabezado" checked>
+        <label for="conEncabezado">Incluir Fila de Encabezado</label><br><br>
+
+        <button onclick="generarTabla()">Generar Tabla</button>
+    </div>
+
+    <div id="tabla-output">
+    </div>
+
+    <script src="tabladin.js"></script>
+</body>
+</html>
