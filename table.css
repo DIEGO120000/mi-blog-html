@@ -1,0 +1,32 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#tablaPosiciones {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    #tablaPosiciones th, #tablaPosiciones td {
+        border: 1px solid #4CAF50;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #tablaPosiciones th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #tablaPosiciones tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+#resultadosArea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+}
