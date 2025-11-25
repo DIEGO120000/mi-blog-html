@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Scripts con(X) HTML y PHP</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Demostración de HTML y PHP</h1>
+        </header>
+        <section class="main">
+            <article id="html">
+                <div class="text">
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;&lt;br /&gt;
+                    </p>
+                    <p>Parte de HTML normal.</p>
+                    <p>
+                        &lt;/html&gt;&lt;br /&gt;
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/html5.png" alt="Logo de HTML5" />
+                </div>
+            </article>
+
+            <?php
+            echo "<article id=\"php\">
+                \n";
+                echo "<div class=\"text\">
+                    \n";
+                    echo "echo \"&lt;?php&gt;&lt;br /&gt;\";\n";
+                    echo "echo \"Parte con PHP.&lt;/p&gt;\";\n";
+                    echo "echo \"&lt;?&gt;\";\n";
+                    echo "
+                </div>\n";
+                echo "<div class=\"img\">
+                    \n";
+                    echo "echo \"<img src='img/php.png' alt='Logo de PHP' />\";\n";
+                    echo "
+                </div>\n";
+                echo "
+            </article>\n";
+            ?>
+        </section>
+    </div>
+</body>
+</html>
